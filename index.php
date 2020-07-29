@@ -114,7 +114,7 @@
           </div><!--/.sg-font-stacks-->
         </div><!--/.sg-info-->
           <!-- Headings -->
-          <h2>Headings Style: Hero #SinglePriceTwoButtons</h2>
+          <u><h1>Headings Style: Hero #SinglePriceTwoButtons</h1></u>
           <div>
               <h1 style="font-family: ars-maquette-web, sans-serif;font-weight: 400;font-size: 45px;">Heading 1 with <small>small text</small> and a <a>link</a></h1>
               <h2 style="font-family: ars-maquette-web, sans-serif;font-size: 32px;">Heading 2 with <small>small text</small> and a <a>link</a></h2>
@@ -124,16 +124,18 @@
               <h6 style="font-family: ars-maquette-web, sans-serif;">Heading 6 with <small>small text</small> and a <a>link</a></h6>
               <p style="font-family:unset;font-weight:200;font-size:11px;">Paragraph with numbers 123 and a price $39.99. </p>
           </div>
+          <hr>
           <!-- Headings -->
-          <h2>Headings Style: c-offer-title span</h2>
+          <u><h1>Headings Style: c-offer-title span</h1></u>
           <div>
               <h1 style="font-family: ars-maquette-web, sans-serif;font-weight: 400;font-size: 52px;">Heading 1 with <small>small text</small> and a <a>link</a></h1>
               <h2 style="font-family: ars-maquette-web, sans-serif;font-weight:200; font-size: 20px;">Heading 2 with <small>small text</small> and a <a>link</a></h2>
               <h3 style="font-family: ars-maquette-web, sans-serif;font-weight:200; font-size: 16px;">Heading 3 with <small>small text</small> and a <a>link</a></h3>
               <p style="font-family:unset;font-weight:200;font-size:14px;">Paragraph with numbers 123 and a price $39.99. </p>
           </div>
+          <hr>
           <!-- Headings -->
-          <h2>Headings Style: offer card</h2>
+          <u><h1>Headings Style: offer card</h1></u>
           <div>
               <h1 style="font-family: conduit light, sans-serif;font-weight: 500;font-size: 60px;">Heading 1 with <small>small text</small> and a <a>link</a></h1>
               <h2 style="font-family: ars-maquette-web, sans-serif;font-weight:700; font-size: 16px;">Heading 2 with <small>small text</small> and a <a>link</a></h2>
@@ -141,24 +143,43 @@
               <h5 style="font-family: ars-maquette-web, sans-serif;font-weight:700; font-size: 13px;">Heading 2 with <small>small text</small> and a <a>link</a></h5>
               <p style="font-family:ars-maquette-web, sans-serif;font-weight:100;font-size:10px;">Paragraph with numbers 123 and a price $39.99. </p>
           </div>
+          <hr>
           <!-- Headings -->
-          <h2>Headings Style: Simple Paragraph with Title</h2>
+          <u><h1>Headings Style: Simple Paragraph with Title</h1></u>
           <div>
               <h2 style="font-size: 48px; font-weight:300;font-family: ars-maquette-web, sans-serif;">About WOW</h2>
               <p style="font-size:14px; font-weight: 200;font-family: ars-maquette-web, sans-serif;">Some paragraph text</p>
           </div>
+          <hr>
           <!-- Headings -->
-          <h2>Headings Style: Hero More Content</h2>
+          <u><h1>Headings Style: Hero More Content</h1></u>
           <div>
               <h2 style="font-size: 32px; font-family: ars-maquette-web, sans-serif;">About WOW</h2>
               <p style="font-size:14px; font-weight: 200;font-family: ars-maquette-web, sans-serif;">Some paragraph text with <strong>strong text</strong></p>
           </div>
+          <hr>
           <!-- Headings -->
-          <h2>Headings Style: Internet Bundles</h2>
+          <u><h1>Headings Style: Internet Bundles</h1></u>
           <div>
               <h3 style="font-size: 18.72px; font-weight:300;font-family: ars-maquette-web, sans-serif;">About WOW</h3>
-              <p style="font-size:.9em; font-weight: 200;font-family: ars-maquette-web, sans-serif;">Some paragraph text with <label style="font-weight: 600; font-size: .7em; text-transform: uppercase;">a label</label> and <span style="font-size: 8px; font-weight: 500;"></span></p>
+              <p style="font-size:.9em; font-weight: 200;font-family: ars-maquette-web, sans-serif;">Some paragraph text with <label style="font-weight: 600; font-size: .7em; text-transform: uppercase;">a label</label> and <span style="font-size: 8px; font-weight: 500;">span text</span></p>
           </div>
+          <hr>
+          <!-- Headings -->
+          <u><h1>Headings Style: sf Content Block</h1></u>
+          <div>
+              <span style="font-size: 16px; text-transform: uppercase; color: #a5a5a5;font-family: ars-maquette-web, sans-serif;"></span>
+              <h2 style="font-size: 32px; font-weight:300;font-family: ars-maquette-web, sans-serif;">Heading 2: About WOW</h2>
+              <p style="font-weight: 200;font-family: ars-maquette-web, sans-serif;">Some paragraph text</p>
+          </div>
+          <hr>
+          <!-- Headings -->
+          <u><h1>Headings Style: the Wow experience</h1></u>
+          <div>
+              <h3 style="font-size: 18.72px; font-family: ars-maquette-web, sans-serif;">Heading 3 text with <label style="font-weight: 600;text-transform: uppercase;">label text</label></h3>
+              <p style="font-weight: 200;font-family: ars-maquette-web, sans-serif;">Some paragraph text</p>
+          </div>
+          <hr>
 
         <?php renderFilesInFolder('markup'); ?>
       </div><!--/.sg-container-->
