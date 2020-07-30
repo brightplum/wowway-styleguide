@@ -111,16 +111,16 @@
             <h2 id="sg-fontStacks" class="sg-h2">Font Stacks</h2>
             <dl class="sg-font-list">
               <dt>Primary Font:</dt>
-              <dd style='font-family: ars-maquette-web, sans-serif;'>Ars Maquette Web</dd>
+              <dd style='font-family: ars-maquette-web, sans-serif;'>Ars Maquette Web, sans-serif</dd>
 
               <dt>Primary Font Bold:</dt>
-              <dd style='font-family: ars-maquette-web, sans-serif; font-weight: 400;'>Ars Maquette Web, sans-serif;</dd>
+              <dd style='font-family: ars-maquette-web, sans-serif; font-weight: 700;'>Ars Maquette Web, sans-serif</dd>
 
               <dt>Secondary Font:</dt>
-              <dd style='font-family: conduit light, sans-serif;'>Conduit Light, sans-serif;</dd>
+              <dd style='font-family: conduit light, sans-serif;'>Conduit Light, sans-serif</dd>
 
               <dt>Secondary Font Bold:</dt>
-              <dd style='font-family: conduit light, sans-serif; font-weight: 700;'>Conduit Light, sans-serif;</dd>
+              <dd style='font-family: conduit light, sans-serif; font-weight: 700;'>Conduit Light, sans-serif</dd>
             </dl>
             <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
           </div><!--/.sg-font-stacks-->
