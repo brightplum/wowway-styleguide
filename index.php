@@ -3,7 +3,7 @@
 <html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
-  <title>Style Guide Boilerplate</title>
+  <title>Wowway! Style Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#000000">
 
@@ -26,8 +26,8 @@
   <div id="top" class="sg-header" role="banner">
     <div class="sg-container">
       <h1 class="sg-logo">
-        <span class="sg-logo-initials">SG</span>
-        <span class="sg-logo-full">STYLE GUIDE</span> <em>BOILERPLATE</em>
+          <em>WOWWAY</em>
+        <span class="sg-logo-full">STYLE GUIDE</span>
       </h1>
       <button type="button" class="sg-nav-toggle">Menu</button>
     </div>
@@ -56,8 +56,8 @@
         <div class="sg-info">
           <div class="sg-about sg-section">
             <h2 id="sg-about" class="sg-h2">Getting Started</h2>
-            <p>A living style guide is a great tool to promote visual consistency, unify UX designers and front-end developers, as well as speed up development times. Add some documentation here on how to get started with your new style guide and start customizing this boilerplate to your liking.</p>
-            <p>If you are looking for resources on style guides, check out <a href="http://styleguides.io">styleguides.io</a>. There are a ton of great articles, books, podcasts, talks, and other style guide tools!</p>
+            <p>A living style guide is a great tool to promote visual consistency, and speed up development times. </p>
+            <p></p>
           </div><!--/.sg-about-->
 
           <!-- Manually add your UI colors here. -->
@@ -74,6 +74,11 @@
                 <div class="sg-color-name">Orange</div>
                 <div class="sg-color-value">#f26529</div>
               </div>
+                <div class="sg-color">
+                    <div class="sg-color-swatch" style="background-color: #ffc40c;"></div>
+                    <div class="sg-color-name">Orange</div>
+                    <div class="sg-color-value">#ffc40c</div>
+                </div>
               <div class="sg-color">
                 <div class="sg-color-swatch" style="background-color: #fff215;"></div>
                 <div class="sg-color-name">Yellow</div>
@@ -81,17 +86,24 @@
               </div>
               <div class="sg-color">
                 <div class="sg-color-swatch" style="background-color: #10ace3;"></div>
-                <div class="sg-color-name">Baby Blue</div>
+                <div class="sg-color-name">Sky Blue</div>
                 <div class="sg-color-value">#10ace3</div>
               </div>
+                <div class="sg-color">
+                    <div class="sg-color-swatch" style="background-color: #0065e3;"></div>
+                    <div class="sg-color-name">Blue</div>
+                    <div class="sg-color-value">#0065e3</div>
+                </div>
+                <div class="sg-color">
+                    <div class="sg-color-swatch" style="background-color: #58595b;"></div>
+                    <div class="sg-color-name">Grey</div>
+                    <div class="sg-color-value">#58595b</div>
+                </div>
             </div><!--/.sg-color-grid-->
             <div class="sg-color-grid">
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #0065e3;"></div>
-                <div class="sg-color-name">Blue</div>
-                <div class="sg-color-value">#0065e3</div>
-              </div>
-            </div><!--/.sg-color-grid-->
+
+
+              </div><!--/.sg-color-grid-->
           </div><!--/.sg-colors-->
 
           <!-- Manually add your fonts here. -->

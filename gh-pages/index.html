@@ -1,95 +1,470 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Style Guide Boilerplate</title>
-    <meta name="description" content="A starting point for crafting web style guides.">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Wowway! Style Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
 
-    <div class="site-header">
-      <div class="container">
-        <h1 class="logo">STYLE GUIDE<span>BOILERPLATE</span></h1>
-        <div class="ctas">
-          <a href="http://bjankord.github.io/Style-Guide-Boilerplate/demo.html" class="btn btn--cta">DEMO</a>
-          <a href="https://github.com/bjankord/Style-Guide-Boilerplate" class="btn btn--cta">GITHUB</a>
-        </div><!--/ctas-->
-      </div><!--/container-->
-    </div><!--/site-header-->
+  <!-- Style Guide Boilerplate Styles -->
+  <link rel="stylesheet" href="css/sg-style.css">
+  <!--[if lt IE 9]><link rel="stylesheet" href="css/sg-style-old-ie.css"><![endif]-->
 
-    <div class="site-body">
-      <div class="container">
-        <h2>WHY</h2>
-        <p>If you're like me, you find yourself using common design components from one website to the next. You could grab the lastest and greatest framework and use that to handle these common components, or you could roll your own framework. <strong>Style Guide Boilerplate</strong> is geared for people interested in creating their own "<a href="http://daverupert.com/2013/04/responsive-deliverables/">tiny Bootstraps</a>".</p>
+  <!-- https://github.com/sindresorhus/github-markdown-css -->
+  <link rel="stylesheet" href="css/github-markdown.css">
 
-        <p><strong>Style Guides:</strong></p>
-        <ul>
-          <li>Promote consistency</li>
-          <li>Promote modular thinking</li>
-          <li>Add clarity to the parts and pieces that make up your website</li>
-          <li>Increase efficiency when editing a website</li>
-        </ul>
+  <!-- Replace below stylesheet with your own stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 
-        <img src="images/screenshot.png" alt="Screenshot of Style Guide Boilerplate">
+  <!-- prism Syntax Highlighting Styles -->
+  <link rel="stylesheet" href="vendor/prism/prism.css">
+</head>
+<body>
+<a href="#main" class="sg-visually-hidden sg-visually-hidden-focusable">Skip to main content</a>
 
-        <h2>WHAT</h2>
-        <p>Style Guide Boilerplate is made up of 5 different parts.</p>
+<div id="top" class="sg-header" role="banner">
+  <div class="sg-container">
+    <h1 class="sg-logo">
+      <em>WOWWAY</em>
+      <span class="sg-logo-full">STYLE GUIDE</span>
+    </h1>
+    <button type="button" class="sg-nav-toggle">Menu</button>
+  </div>
+</div><!--/.sg-header-->
 
-        <ul class="highlights">
-          <li>
-            <h3 class="highlights-title">About Section:</h3>
-            <p>A place to talk about your project's style guide and how awesome it is.</p>
-          </li>
-          <li>
-            <h3 class="highlights-title">Fonts Section:</h3>
-            <p>A place to document the font-stacks used on your project's site.</p>
-          </li>
-          <li>
-            <h3 class="highlights-title">Colors Section:</h3>
-            <p>A place to document the main colors used on your project's site.</p>
-          </li>
-          <li>
-            <h3 class="highlights-title">Base Styles Section:</h3>
-            <p>A place for common HTML elements. If you’re familiar with <a href="http://smacss.com/">SMACSS</a>, you already know what base styles are for. These are styles for things like headings, blockquotes, tabular data.</p>
-          </li>
-          <li>
-            <h3 class="highlights-title">Pattern Styles Section:</h3>
-            <p>A place to list all of the common design components. This is a great place to add modular pieces of markup for things like pagination, buttons, alerts, etc., though you can also add custom styles for base elements like headings, blockquotes, tabular data here too.</p>
-          </li>
-        </ul>
-        <div class="btn--cta-alt-mod">
-          <a href="https://github.com/bjankord/Style-Guide-Boilerplate" class="btn btn--cta-alt">Get Started</a>
+<div class="sg-wrapper sg-clearfix">
+  <div id="nav" class="sg-sidebar" role="navigation">
+    <h2 class="sg-h2 sg-subnav-title">About</h2>
+    <ul class="sg-nav-group">
+      <li>
+        <a href="#sg-about">Getting Started</a>
+      </li>
+      <li>
+        <a href="#sg-colors">Colors</a>
+      </li>
+      <li>
+        <a href="#sg-fontStacks">Fonts</a>
+      </li>
+    </ul>
+
+    <ul class="sg-nav-group"><li class="sg-subnav-parent"><h2 id="sg-markup-base" class="sg-h2 sg-title">base</h2><ul class="sg-nav-group"><li><a href="#sg-markup-base-blockquote-html">blockquote</a></li><li><a href="#sg-markup-base-form-buttons-html">form buttons</a></li><li><a href="#sg-markup-base-form-contact-html">form contact</a></li><li><a href="#sg-markup-base-grid-layout-html">grid layout</a></li><li><a href="#sg-markup-base-modals-html">modals</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-patterns" class="sg-h2 sg-title">patterns</h2><ul class="sg-nav-group"><li><a href="#sg-markup-patterns-buttons-html">buttons</a></li></ul></li></ul>    </div><!--/.sg-sidebar-->
+
+  <div id="main" class="sg-main" role="main">
+    <div class="sg-container">
+      <div class="sg-info">
+        <div class="sg-about sg-section">
+          <h2 id="sg-about" class="sg-h2">Getting Started</h2>
+          <p>A living style guide is a great tool to promote visual consistency, and speed up development times. </p>
+          <p></p>
+        </div><!--/.sg-about-->
+
+        <!-- Manually add your UI colors here. -->
+        <div class="sg-colors sg-section">
+          <h2 id="sg-colors" class="sg-h2">Colors</h2>
+          <div class="sg-color-grid">
+            <div class="sg-color">
+              <div class="sg-color-swatch" style="background-color: #c62328;"></div>
+              <div class="sg-color-name">Red</div>
+              <div class="sg-color-value">#c62328</div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color-swatch" style="background-color: #f26529;"></div>
+              <div class="sg-color-name">Orange</div>
+              <div class="sg-color-value">#f26529</div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color-swatch" style="background-color: #ffc40c;"></div>
+              <div class="sg-color-name">Orange</div>
+              <div class="sg-color-value">#ffc40c</div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color-swatch" style="background-color: #fff215;"></div>
+              <div class="sg-color-name">Yellow</div>
+              <div class="sg-color-value">#fff215</div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color-swatch" style="background-color: #10ace3;"></div>
+              <div class="sg-color-name">Sky Blue</div>
+              <div class="sg-color-value">#10ace3</div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color-swatch" style="background-color: #0065e3;"></div>
+              <div class="sg-color-name">Blue</div>
+              <div class="sg-color-value">#0065e3</div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color-swatch" style="background-color: #58595b;"></div>
+              <div class="sg-color-name">Grey</div>
+              <div class="sg-color-value">#58595b</div>
+            </div>
+          </div><!--/.sg-color-grid-->
+          <div class="sg-color-grid">
+
+
+          </div><!--/.sg-color-grid-->
+        </div><!--/.sg-colors-->
+
+        <!-- Manually add your fonts here. -->
+        <div class="sg-font-stacks sg-section">
+          <h2 id="sg-fontStacks" class="sg-h2">Font Stacks</h2>
+          <dl class="sg-font-list">
+            <dt>Primary Font:</dt>
+            <dd style='font-family: ars-maquette-web, sans-serif;'>Ars Maquette Web</dd>
+
+            <dt>Primary Font Bold:</dt>
+            <dd style='font-family: ars-maquette-web, sans-serif; font-weight: 400;'>Ars Maquette Web, sans-serif;</dd>
+
+            <dt>Secondary Font:</dt>
+            <dd style='font-family: conduit light, sans-serif;'>Conduit Light, sans-serif;</dd>
+
+            <dt>Secondary Font Bold:</dt>
+            <dd style='font-family: conduit light, sans-serif; font-weight: 700;'>Conduit Light, sans-serif;</dd>
+          </dl>
+          <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
+        </div><!--/.sg-font-stacks-->
+      </div><!--/.sg-info-->
+      <!-- Headings -->
+      <u><h1>Headings Style: Hero #SinglePriceTwoButtons</h1></u>
+      <div>
+        <h1 style="font-family: ars-maquette-web, sans-serif;font-weight: 400;font-size: 45px;">Heading 1 with <small>small text</small> and a <a>link</a></h1>
+        <h2 style="font-family: ars-maquette-web, sans-serif;font-size: 32px;">Heading 2 with <small>small text</small> and a <a>link</a></h2>
+        <h3 style="font-family: ars-maquette-web, sans-serif;font-weight:400; text-transform:uppercase;font-size: 20px;">Heading 3 with <small>small text</small> and a <a>link</a></h3>
+        <h4 style="font-family: ars-maquette-web, sans-serif;">Heading 4 with <small>small text</small> and a <a>link</a></h4>
+        <h5 style="font-family: ars-maquette-web, sans-serif;">Heading 5 with <small>small text</small> and a <a>link</a></h5>
+        <h6 style="font-family: ars-maquette-web, sans-serif;">Heading 6 with <small>small text</small> and a <a>link</a></h6>
+        <p style="font-family:unset;font-weight:200;font-size:11px;">Paragraph with numbers 123 and a price $39.99. </p>
+      </div>
+      <hr>
+      <!-- Headings -->
+      <u><h1>Headings Style: c-offer-title span</h1></u>
+      <div>
+        <h1 style="font-family: ars-maquette-web, sans-serif;font-weight: 400;font-size: 52px;">Heading 1 with <small>small text</small> and a <a>link</a></h1>
+        <h2 style="font-family: ars-maquette-web, sans-serif;font-weight:200; font-size: 20px;">Heading 2 with <small>small text</small> and a <a>link</a></h2>
+        <h3 style="font-family: ars-maquette-web, sans-serif;font-weight:200; font-size: 16px;">Heading 3 with <small>small text</small> and a <a>link</a></h3>
+        <p style="font-family:unset;font-weight:200;font-size:14px;">Paragraph with numbers 123 and a price $39.99. </p>
+      </div>
+      <hr>
+      <!-- Headings -->
+      <u><h1>Headings Style: offer card</h1></u>
+      <div>
+        <h1 style="font-family: conduit light, sans-serif;font-weight: 500;font-size: 60px;">Heading 1 with <small>small text</small> and a <a>link</a></h1>
+        <h2 style="font-family: ars-maquette-web, sans-serif;font-weight:700; font-size: 16px;">Heading 2 with <small>small text</small> and a <a>link</a></h2>
+        <h3 style="font-family: ars-maquette-web, sans-serif;font-weight:200; font-size: 14px;">Heading 2 with <small>small text</small> and a <a>link</a></h3>
+        <h5 style="font-family: ars-maquette-web, sans-serif;font-weight:700; font-size: 13px;">Heading 2 with <small>small text</small> and a <a>link</a></h5>
+        <p style="font-family:ars-maquette-web, sans-serif;font-weight:100;font-size:10px;">Paragraph with numbers 123 and a price $39.99. </p>
+      </div>
+      <hr>
+      <!-- Headings -->
+      <u><h1>Headings Style: Simple Paragraph with Title</h1></u>
+      <div>
+        <h2 style="font-size: 48px; font-weight:300;font-family: ars-maquette-web, sans-serif;">About WOW</h2>
+        <p style="font-size:14px; font-weight: 200;font-family: ars-maquette-web, sans-serif;">Some paragraph text</p>
+      </div>
+      <hr>
+      <!-- Headings -->
+      <u><h1>Headings Style: Hero More Content</h1></u>
+      <div>
+        <h2 style="font-size: 32px; font-family: ars-maquette-web, sans-serif;">About WOW</h2>
+        <p style="font-size:14px; font-weight: 200;font-family: ars-maquette-web, sans-serif;">Some paragraph text with <strong>strong text</strong></p>
+      </div>
+      <hr>
+      <!-- Headings -->
+      <u><h1>Headings Style: Internet Bundles</h1></u>
+      <div>
+        <h3 style="font-size: 18.72px; font-weight:300;font-family: ars-maquette-web, sans-serif;">About WOW</h3>
+        <p style="font-size:.9em; font-weight: 200;font-family: ars-maquette-web, sans-serif;">Some paragraph text with <label style="font-weight: 600; font-size: .7em; text-transform: uppercase;">a label</label> and <span style="font-size: 8px; font-weight: 500;">span text</span></p>
+      </div>
+      <hr>
+      <!-- Headings -->
+      <u><h1>Headings Style: sf Content Block</h1></u>
+      <div>
+        <span style="font-size: 16px; text-transform: uppercase; color: #a5a5a5;font-family: ars-maquette-web, sans-serif;"></span>
+        <h2 style="font-size: 32px; font-weight:300;font-family: ars-maquette-web, sans-serif;">Heading 2: About WOW</h2>
+        <p style="font-weight: 200;font-family: ars-maquette-web, sans-serif;">Some paragraph text</p>
+      </div>
+      <hr>
+      <!-- Headings -->
+      <u><h1>Headings Style: the Wow experience</h1></u>
+      <div>
+        <h3 style="font-size: 18.72px; font-family: ars-maquette-web, sans-serif;">Heading 3 text with <label style="font-weight: 600;text-transform: uppercase;">label text</label></h3>
+        <p style="font-weight: 200;font-family: ars-maquette-web, sans-serif;">Some paragraph text</p>
+      </div>
+      <hr>
+
+      <div class="sg-section-group"><h1 id="sg-markup-base" class="sg-h1 sg-title">base</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-base-blockquote-html" class="sg-h2 sg-title">blockquote</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="vert">
+        <div class="simply-scroll-clip">
+          <div class="simply-scroll-list">
+            <li class="feed">
+              <h5><a>Link text</a> Title</h5>
+              <p>
+                Some paragraph text
+              </p>
+              <a>link text</a>
+            </li>
+          </div>
         </div>
-      </div><!--/container-->
-    </div><!--/site body-->
+      </div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;vert&quot;&gt;
+  &lt;div class=&quot;simply-scroll-clip&quot;&gt;
+    &lt;div class=&quot;simply-scroll-list&quot;&gt;
+      &lt;li class=&quot;feed&quot;&gt;
+        &lt;h5&gt;&lt;a&gt;Link text&lt;/a&gt; Title&lt;/h5&gt;
+        &lt;p&gt;
+          Some paragraph text
+        &lt;/p&gt;
+        &lt;a&gt;link text&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-form-buttons-html" class="sg-h2 sg-title">form buttons</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="button-select">
+        <select>
+          <option>A - Z</option>
+        </select>
+      </div><br>
 
-    <div class="site-footer">
-      <div class="container">
-        <ul class="list--inline">
-          <li>Made by <a href="http://www.brettjankord.com/">Brett Jankord</a></li>
-          <li><a href="https://github.com/bjankord">GitHub</a></li>
-          <li><a href="https://twitter.com/bjankord">Twitter</a></li>
-        </ul>
-        <p>License: <a href="https://github.com/bjankord/Style-Guide-Boilerplate/blob/master/LICENSE.txt">MIT</a></p>
-      </div><!--/container-->
-    </div><!--/site body-->
+        <div class="form-row">
+          <input type="submit" value="submit" class="btn--primary"><br>
+        </div><br>
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-41788165-1']);
-      _gaq.push(['_trackPageview']);
+        <div class="faq-toolbar">
+          <div class="toolbar-split">
+            <div class="select-wrapper">
+              <select>
+                <option>Options</option>
+              </select>
+            </div>
+          </div>
+          <div class="toolbar-split">
+            <input placeholder="Search" type="text" value="">
+            <input type="submit" value="go" class="btn btn--primary">
+          </div>
+        </div><br>
+      </div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;button-select&quot;&gt;
+  &lt;select&gt;
+    &lt;option&gt;A - Z&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;&lt;br&gt;
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </body>
+&lt;div class=&quot;form-row&quot;&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;submit&quot; class=&quot;btn--primary&quot;&gt;&lt;br&gt;
+&lt;/div&gt;&lt;br&gt;
+
+&lt;div class=&quot;faq-toolbar&quot;&gt;
+  &lt;div class=&quot;toolbar-split&quot;&gt;
+    &lt;div class=&quot;select-wrapper&quot;&gt;
+      &lt;select&gt;
+        &lt;option&gt;Options&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;toolbar-split&quot;&gt;
+    &lt;input placeholder=&quot;Search&quot; type=&quot;text&quot; value=&quot;&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;go&quot; class=&quot;btn btn--primary&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;br&gt;
+</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-form-contact-html" class="sg-h2 sg-title">form contact</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><!-- form styles -->
+        <div class="form-group">
+          <div class="form-row">
+            <label>
+              Input Label<br>
+              <span class="req">*</span><br>
+              <span class="error-message">error message</span><br>
+            </label>
+
+            <input type="text" placeholder="Placeholder text">
+          </div>
+          <div class="form-row address-group">
+            <div class="ag-city">
+              <label>
+                Input Label<br>
+                <span class="req">*</span><br>
+              </label>
+
+              <input type="text" placeholder="Placeholder text">
+            </div>
+            <div class="ag-state">
+              <label>
+                Select options<br>
+                <span class="req">*</span><br>
+              </label>
+              <select>
+                <option>Option</option>
+              </select>
+            </div>
+            <div class="ag-state">
+              <label>
+                Input Label<br>
+                <span class="req">*</span>
+
+              </label>
+
+              <input type="text" placeholder="Placeholder text">
+            </div>
+          </div>
+          <div class="form-row inquiry-row">
+            <label>Form Label</label>
+            <span class="req">*</span>
+            <select class="inquiry-type-select">
+              <option>Option 1</option>
+              <option>Option 2</option>
+            </select>
+          </div>
+          <div class="form-row comment-row">
+            <textarea>textarea for comments</textarea>
+          </div>
+        </div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;!-- form styles --&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;form-row&quot;&gt;
+        &lt;label&gt;
+            Input Label&lt;br&gt;
+            &lt;span class=&quot;req&quot;&gt;*&lt;/span&gt;&lt;br&gt;
+            &lt;span class=&quot;error-message&quot;&gt;error message&lt;/span&gt;&lt;br&gt;
+        &lt;/label&gt;
+
+        &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-row address-group&quot;&gt;
+        &lt;div class=&quot;ag-city&quot;&gt;
+            &lt;label&gt;
+                Input Label&lt;br&gt;
+                &lt;span class=&quot;req&quot;&gt;*&lt;/span&gt;&lt;br&gt;
+            &lt;/label&gt;
+
+            &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;ag-state&quot;&gt;
+            &lt;label&gt;
+                Select options&lt;br&gt;
+                &lt;span class=&quot;req&quot;&gt;*&lt;/span&gt;&lt;br&gt;
+            &lt;/label&gt;
+            &lt;select&gt;
+                &lt;option&gt;Option&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;ag-state&quot;&gt;
+            &lt;label&gt;
+                Input Label&lt;br&gt;
+                &lt;span class=&quot;req&quot;&gt;*&lt;/span&gt;
+
+            &lt;/label&gt;
+
+            &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder text&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-row inquiry-row&quot;&gt;
+        &lt;label&gt;Form Label&lt;/label&gt;
+        &lt;span class=&quot;req&quot;&gt;*&lt;/span&gt;
+        &lt;select class=&quot;inquiry-type-select&quot;&gt;
+            &lt;option&gt;Option 1&lt;/option&gt;
+            &lt;option&gt;Option 2&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-row comment-row&quot;&gt;
+        &lt;textarea&gt;textarea for comments&lt;/textarea&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-grid-layout-html" class="sg-h2 sg-title">grid layout</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><h1>Steps Grid</h1>
+        <div class="streaming-steps">
+          <div class="step step1">
+            <div class="text-center">
+              <p><strong>Step 1</strong></p>
+            </div>
+          </div>
+          <div class="step step2">
+            <div class="text-center">
+              <p><strong>Step 2</strong></p>
+            </div>
+          </div>
+          <div class="step step3">
+            <div class="text-center">
+              <p><strong>Step 3</strong></p>
+            </div>
+          </div>
+        </div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;h1&gt;Steps Grid&lt;/h1&gt;
+&lt;div class=&quot;streaming-steps&quot;&gt;
+  &lt;div class=&quot;step step1&quot;&gt;
+    &lt;div class=&quot;text-center&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;step step2&quot;&gt;
+    &lt;div class=&quot;text-center&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;step step3&quot;&gt;
+    &lt;div class=&quot;text-center&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-modals-html" class="sg-h2 sg-title">modals</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="link">
+        <a class="top-link default-cursor">Menu Button</a>
+        <div class="link-menu">
+          <a>Menu Items</a>
+        </div>
+      </div>
+
+        <div>
+          <!-- adding the active class to this div creates the modal effect -->
+          <div id="video" class="video"></div>
+        </div>
+
+        <script>
+          function() {
+            $('#video').toggleClass('active');
+          }
+        </script></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;link&quot;&gt;
+    &lt;a class=&quot;top-link default-cursor&quot;&gt;Menu Button&lt;/a&gt;
+    &lt;div class=&quot;link-menu&quot;&gt;
+        &lt;a&gt;Menu Items&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+    &lt;!-- adding the active class to this div creates the modal effect --&gt;
+    &lt;div id=&quot;video&quot; class=&quot;video&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    function() {
+        $('#video').toggleClass('active');
+    }
+&lt;/script&gt;</code></pre></div></div></div></div><h1 id="sg-markup-patterns" class="sg-h1 sg-title">patterns</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-patterns-buttons-html" class="sg-h2 sg-title">buttons</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="c-footer__icon-block">
+
+      </div>
+        <button class="o-button_blue" type="button">Shop Offers</button><br><br>
+        <button type="button" class="o-button_blue">Check Availability</button><br><br>
+        <div style="background-color: black;padding: 10px;">
+          <button class="btn-transparent" type="button">
+            Watch Video
+          </button>
+        </div><br><br>
+        <div class="whwf-slice-pricing-buttons">
+          <button class="whwf-button-gold" type="button" onclick="WriteStoreCookie(341, '1'); return false;" style="font-weight: bold;">
+            Customize Order
+          </button>
+        </div><br>
+        <button type="button" class="o-button_blue-outline">Learn More</button>
+      </div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;c-footer__icon-block&quot;&gt;
+
+&lt;/div&gt;
+&lt;button class=&quot;o-button_blue&quot; type=&quot;button&quot;&gt;Shop Offers&lt;/button&gt;&lt;br&gt;&lt;br&gt;
+&lt;button type=&quot;button&quot; class=&quot;o-button_blue&quot;&gt;Check Availability&lt;/button&gt;&lt;br&gt;&lt;br&gt;
+&lt;div style=&quot;background-color: black;padding: 10px;&quot;&gt;
+    &lt;button class=&quot;btn-transparent&quot; type=&quot;button&quot;&gt;
+    Watch Video
+    &lt;/button&gt;
+&lt;/div&gt;&lt;br&gt;&lt;br&gt;
+&lt;div class=&quot;whwf-slice-pricing-buttons&quot;&gt;
+    &lt;button class=&quot;whwf-button-gold&quot; type=&quot;button&quot; onclick=&quot;WriteStoreCookie(341, '1'); return false;&quot; style=&quot;font-weight: bold;&quot;&gt;
+        Customize Order
+    &lt;/button&gt;
+&lt;/div&gt;&lt;br&gt;
+&lt;button type=&quot;button&quot; class=&quot;o-button_blue-outline&quot;&gt;Learn More&lt;/button&gt;
+</code></pre></div></div></div></div></div>      </div><!--/.sg-container-->
+  </div><!--/.sg-main-->
+</div><!--/.sg-wrapper-->
+
+<!--[if gt IE 8]><!--><script src="vendor/prism/prism.js"></script><!--<![endif]-->
+<script src="js/sg-scripts.js"></script>
+</body>
 </html>
+
