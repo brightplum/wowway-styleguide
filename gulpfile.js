@@ -10,7 +10,7 @@ gulp.task('styles', () => {
 
 gulp.task('clean', () => {
     return del([
-        'css/main.css',
+        'css/style.css',
     ]);
 });
 
