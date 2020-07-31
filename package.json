@@ -20,6 +20,14 @@
   },
   "homepage": "https://github.com/bjankord/Style-Guide-Boilerplate#readme",
   "devDependencies": {
-    "gh-pages": "^2.0.1"
-  }
+    "del": "^5.1.0",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "keywords": []
 }
