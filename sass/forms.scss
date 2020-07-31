@@ -1,0 +1,147 @@
+.req {
+  color: variables.$red;
+}
+.error-message {
+  color: variables.$red;
+}
+input[type="text"] {
+  color: #333;
+  border: 1px solid variables.$lgrey;
+  border-radius: 3px;
+  padding: 12px 8px;
+}
+textarea {
+  overflow: auto;
+  font: inherit;
+  margin: 0;
+  resize: none;
+}
+.form-group {
+  color: variables.$grey;
+  border: 0;
+}
+.form-row{
+  border-bottom: 1px solid variables.$grey;
+  margin-bottom: 10px;
+}
+.form-group input[type="text"]{
+  padding:5px 0;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  width:100%;
+  margin-bottom: 0;
+  line-height: normal;
+  font: inherit;
+}
+
+.form-group textarea {
+  color: variables.$grey;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  padding: 0;
+  padding-left: 0px;
+  box-sizing: border-box;
+  min-height: 100px;
+}
+.address-group {
+  width: 100%;
+  overflow: auto;
+  display: table;
+}
+.ag-city {
+  width: 50%;
+  border-right: 1px solid variables.$lgrey;
+}
+.address-group div {
+  display: table-cell;
+}
+.ag-state {
+  width: 25%;
+  border-right: 1px solid variables.$lgrey;
+  padding: 5px;
+}
+.form-group label {
+  display: block;
+  font-family: nunito sans,sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.form-row select {
+  border-bottom: 0;
+}
+.form-group select {
+  box-sizing: border-box;
+  padding: 5px 0;
+  color: variables.$grey;
+  border: 0;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-radius: 0;
+  width: 100%;
+}
+select {
+  color: variables.$black;
+  box-shadow: none;
+  padding: 12px 26px 12px 10px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+}
+.select-wrapper{
+  position: relative;
+  max-width: 240px;
+  width: 100%;
+  border: 1px solid variables.$lgrey;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.inquiry-row {
+  width: 50%;
+}
+.inquiry-type-select {
+  background-image: linear-gradient(45deg,transparent 50%,gray 50%),linear-gradient(135deg,gray 50%,transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px),calc(100% - 2.5em) .5em;
+  background-size: 5px 5px,5px 5px,1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.comment-row textarea{
+  padding-left: 0;
+}
+
+.button-select select {
+  position: relative;
+  background-color: variables.$persianBlue;
+  height: 36px;
+  min-width: 154px;
+  line-height: 36px;
+  text-align: left;
+  font-weight: 700;
+  font-size: .85rem;
+  color: variables.$white;
+  border-radius: 4px;
+  padding: 0 48px 0 18px;
+  cursor: pointer;
+  border: none;
+}
+.button-select select::after {
+  content: '';
+  background-image: url(/assets/img/chevron-white.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 14px;
+  margin: auto;
+  transition: transform .15s ease-out;
+}

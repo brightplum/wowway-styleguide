@@ -1,0 +1,58 @@
+body {
+  font-size: 16px;
+  font-family: variables.$p-font-stack;
+  color: rgb(88,89,91);
+}
+
+a {
+  color: variables.$persianBlue
+  font-size: 14px;
+}
+
+li {
+  p {
+    font-weight: 200;
+    letter-spacing: 0.5px;
+  }
+}
+
+img, svg, video, audio {
+  max-width: 100%;
+}
+
+u {
+  h1 {
+    color: variables.$black;
+  }
+}
+
+button {
+  border: none;
+  text-align: center;
+}
+
+textarea {
+  overflow: auto;
+  font: inherit;
+  margin: 0;
+  resize: none;
+}
+
+input[type="text"] {
+  color: #333;
+  border: 1px solid variables.$lgrey;
+  border-radius: 3px;
+  padding: 12px 8px;
+}
+
+select {
+  color: #333;
+  box-shadow: none;
+  padding: 12px 26px 12px 10px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+}
+

@@ -10,11 +10,12 @@ gulp.task('styles', () => {
 
 gulp.task('clean', () => {
     return del([
-        'css/style.css',
+        'css/main.css',
     ]);
 });
 
-// gulp.task('default', gulp.series(['clean', 'styles']));
+gulp.task('default', gulp.series(['clean', 'styles']));
+
 gulp.task('watch', () => {
     gulp.watch('sass/**/*.scss', (done) => {
         gulp.series(['clean', 'styles'])(done);

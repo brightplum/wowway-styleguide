@@ -1,0 +1,103 @@
+.btn--primary{
+  background: variables.$red;
+  color: variables.$white !important;
+  font-weight: 400;
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-family: variables.$t-font-stack;
+  font-size: 1rem;
+  transition: all ease-in 300ms;
+  border: 0;
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.btn-transparent {
+  background-color: transparent;
+  color: variables.$white;
+  border: 1px solid variables.$white;
+  flex: 0 0 180px;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .9em;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.o-button_blue-outline {
+  background-color: variables.$white;
+  border-radius: 3px;
+  color: variables.$persianBlue;
+  font-size: 14px;
+  height: 45px;
+  max-width: 225px;
+  width: 140px;
+  border: 1px solid variables.$persianBlue;
+}
+
+.hero #singlePriceTwoButtons {
+  margin-bottom: 10px;
+  font-weight: bold !important;
+  width: 225px !important;
+}
+.hero #singlePriceTwoButtons .hero-button-primary {
+  color: variables.$black !important;
+  background-color: variables.$orange !important;
+}
+.hero-button-secondary{
+  color: variables.$white !important;
+}
+.hero-button-wrapper {
+  font-size: 14px;
+  margin-right:10px;
+}
+.internet-hero {
+  min-width:200px;
+}
+.o-button_blue {
+  background-color: variables.$persianBlue;
+  color: variables.$white;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 3px;
+  height:45px;
+  max-width: 225px;
+}
+.o-button_gold {
+  font-size: 14px;
+  font-weight: 600;
+}
+.o-button_white {
+  background-color: transparent;
+  border-radius: 3px;
+  color: variables.$white;
+  font-size: 14px;
+  height: 45px;
+  max-width: 225px;
+  width: 140px;
+  border: 1px solid variables.$white;
+}
+.c-wifi-cta button {
+  width: 239px;
+}
+.whwf-slice-pricing-buttons button {
+  flex: 0 0 180px;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .9em;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.whwf-slice-pricing-buttons .whwf-button-gold {
+  background-color: variables.$orange;
+  color: variables.$black;
+  font-weight: bold;
+}

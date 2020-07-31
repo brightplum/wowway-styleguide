@@ -1,0 +1,59 @@
+.vert {
+  margin-bottom: 1.5em;
+}
+.vert .simply-scroll-clip {
+  max-width: 602px;
+}
+.simply-scroll-clip {
+  position: relative;
+  overflow: hidden;
+}
+.simply-scroll-list {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.feed h5 {
+  font-size: 13px;
+  margin: 0 0 5px 0;
+  color: variables.$grey;
+  font-family: variables.$t-font-stack;
+  font-weight: 700;
+}
+.simply-scroll-list li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.vert .simply-scroll-list li {
+  width: 602px;
+  height: 95px;
+}
+.link-menu {
+  background-color: variables.$white;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.28);
+  display: none;
+  flex-direction: column;
+  left: -15px;
+  max-width: 220px;
+  min-width: 120px;
+  padding: 10px 15px;
+  position: absolute;
+  top: 35px;
+  transition: 150ms ease-in-out;
+  z-index: 3;
+  width: 100%;
+}
+.link-menu a {
+  background-color: variables.$white;
+  color: variables.$black;
+  display: block;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 0;
+  text-decoration: none;
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+}
