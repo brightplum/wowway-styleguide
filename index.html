@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/github-markdown.css">
 
   <!-- Replace below stylesheet with your own stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <!-- prism Syntax Highlighting Styles -->
   <link rel="stylesheet" href="vendor/prism/prism.css">
@@ -47,7 +47,7 @@
       </li>
     </ul>
 
-    <ul class="sg-nav-group"><li class="sg-subnav-parent"><h2 id="sg-markup-base" class="sg-h2 sg-title">base</h2><ul class="sg-nav-group"><li><a href="#sg-markup-base-blockquote-html">blockquote</a></li><li><a href="#sg-markup-base-buttons-html">buttons</a></li><li><a href="#sg-markup-base-form-buttons-html">form buttons</a></li><li><a href="#sg-markup-base-form-contact-html">form contact</a></li><li><a href="#sg-markup-base-grid-layout-html">grid layout</a></li><li><a href="#sg-markup-base-modals-html">modals</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-patterns" class="sg-h2 sg-title">patterns</h2><ul class="sg-nav-group"></ul></li></ul>    </div><!--/.sg-sidebar-->
+    <ul class="sg-nav-group"><li class="sg-subnav-parent"><h2 id="sg-markup-base" class="sg-h2 sg-title">base</h2><ul class="sg-nav-group"><li><a href="#sg-markup-base-blockquote-html">blockquote</a></li><li><a href="#sg-markup-base-buttons-html">buttons</a></li><li><a href="#sg-markup-base-form-buttons-html">form buttons</a></li><li><a href="#sg-markup-base-form-contact-html">form contact</a></li><li><a href="#sg-markup-base-grid-layout-html">grid layout</a></li><li><a href="#sg-markup-base-modals-html">modals</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-patterns" class="sg-h2 sg-title">patterns</h2><ul class="sg-nav-group"><li><a href="#sg-markup-patterns-aboutwow-html">aboutwow</a></li><li><a href="#sg-markup-patterns-content-hero-html">content hero</a></li><li><a href="#sg-markup-patterns-whwf-html">whwf</a></li></ul></li></ul>    </div><!--/.sg-sidebar-->
 
   <div id="main" class="sg-main" role="main">
     <div class="sg-container">
@@ -471,9 +471,258 @@
     function() {
         $('#video').toggleClass('active');
     }
-&lt;/script&gt;</code></pre></div></div></div></div><h1 id="sg-markup-patterns" class="sg-h1 sg-title">patterns</h1><div class="sg-section-group"></div></div>      </div><!--/.sg-container-->
+&lt;/script&gt;</code></pre></div></div></div></div><h1 id="sg-markup-patterns" class="sg-h1 sg-title">patterns</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-patterns-aboutwow-html" class="sg-h2 sg-title">aboutwow</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="wow-hero">
+          <div class="wow-hero__content">
+            <h2>About WOW</h2>
+            <hr><br>
+            <p>
+              As one of the biggest broadband providers in the country – with high-speed Internet at speeds up to 1 Gig, TV and voice – we bring a personalized, community-oriented approach to all 19 markets we serve. This makes us a long-standing winner for best customer service in the industry and offers you a distinctly different choice in Internet, TV and phone providers.
+              The diverse and experienced WOW! management team and all employees share a passion for doing things right and delighting our customers. Together, we are focused on building a culture at WOW! that is founded on four core values: Respect, Integrity, Spirit of Service and Accountability. These values are at the heart of what drives us to do our best for all of our customers.
+            </p>
+            <a><button class="o-button_blue-outline">Learn More</button></a>
+          </div>
+        </div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;wow-hero&quot;&gt;
+    &lt;div class=&quot;wow-hero__content&quot;&gt;
+        &lt;h2&gt;About WOW&lt;/h2&gt;
+        &lt;hr&gt;&lt;br&gt;
+        &lt;p&gt;
+            As one of the biggest broadband providers in the country – with high-speed Internet at speeds up to 1 Gig, TV and voice – we bring a personalized, community-oriented approach to all 19 markets we serve. This makes us a long-standing winner for best customer service in the industry and offers you a distinctly different choice in Internet, TV and phone providers.
+            The diverse and experienced WOW! management team and all employees share a passion for doing things right and delighting our customers. Together, we are focused on building a culture at WOW! that is founded on four core values: Respect, Integrity, Spirit of Service and Accountability. These values are at the heart of what drives us to do our best for all of our customers.
+        &lt;/p&gt;
+        &lt;a&gt;&lt;button class=&quot;o-button_blue-outline&quot;&gt;Learn More&lt;/button&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-content-hero-html" class="sg-h2 sg-title">content hero</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><!-- Hero Main -->
+          <div id="" class="c-hero type_singlePriceTwoButtons">
+
+            <div class="c-hero__wrapper">
+
+              <h1 class="c-hero__title">
+                A title
+              </h1>
+              <h2 class="c-hero__subtitle">
+                Subtitle
+              </h2>
+              <div class="c-hero__card-group">
+
+                <div class="c-hero__card">
+
+                  <div class="c-hero__card__label">
+                    <b>Some Label Text</b>
+                  </div>
+                  <div class="c-hero__card__main">
+                    <div class="c-hero__card__price">$39</div>
+                    <div class="c-hero__card__details">
+                      <div class="c-hero__card__cents">99</div>
+                      <div class="c-hero__card__month">Per <br> Month</div>
+                    </div>
+
+                  </div>
+                  <div class="c-hero__card__disclaimer">
+                    *Here's some disclaimer text
+                  </div>
+                </div>
+
+              </div>
+              <div class="c-hero__button__wrapper">
+                <button class="c-hero__button c-hero__button--gold" type="button">
+                  Customize Order
+                </button>
+                <button class="c-hero__button c-hero__button--blue" type="button">
+                  Customize Order
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Whole Home WiFi -->
+          <div>
+
+          </div>
+
+          <!-- Wowway/Internet -->
+          <!-- Product Hero -->
+          <div>
+
+          </div>
+
+          <!-- Internet Wifi Hero -->
+          <div>
+
+          </div>
+
+          <!-- location section -->
+        </div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;!-- Hero Main --&gt;
+&lt;div id=&quot;&quot; class=&quot;c-hero type_singlePriceTwoButtons&quot;&gt;
+
+        &lt;div class=&quot;c-hero__wrapper&quot;&gt;
+
+            &lt;h1 class=&quot;c-hero__title&quot;&gt;
+                A title
+            &lt;/h1&gt;
+            &lt;h2 class=&quot;c-hero__subtitle&quot;&gt;
+                Subtitle
+            &lt;/h2&gt;
+            &lt;div class=&quot;c-hero__card-group&quot;&gt;
+
+                &lt;div class=&quot;c-hero__card&quot;&gt;
+
+                    &lt;div class=&quot;c-hero__card__label&quot;&gt;
+                        &lt;b&gt;Some Label Text&lt;/b&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-hero__card__main&quot;&gt;
+                        &lt;div class=&quot;c-hero__card__price&quot;&gt;$39&lt;/div&gt;
+                        &lt;div class=&quot;c-hero__card__details&quot;&gt;
+                            &lt;div class=&quot;c-hero__card__cents&quot;&gt;99&lt;/div&gt;
+                            &lt;div class=&quot;c-hero__card__month&quot;&gt;Per &lt;br&gt; Month&lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-hero__card__disclaimer&quot;&gt;
+                        *Here's some disclaimer text
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;c-hero__button__wrapper&quot;&gt;
+                &lt;button class=&quot;c-hero__button c-hero__button--gold&quot; type=&quot;button&quot;&gt;
+                    Customize Order
+                &lt;/button&gt;
+                &lt;button class=&quot;c-hero__button c-hero__button--blue&quot; type=&quot;button&quot;&gt;
+                    Customize Order
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Whole Home WiFi --&gt;
+&lt;div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Wowway/Internet --&gt;
+&lt;!-- Product Hero --&gt;
+&lt;div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Internet Wifi Hero --&gt;
+&lt;div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- location section --&gt;
+</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-whwf-html" class="sg-h2 sg-title">whwf</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="whwf-hero">
+          <div class="whwf-hero__content">
+            <h2>Extend your super-fast Internet to reach every corner of your home.</h2>
+            <p>Whole-Home WiFi, powered by eero, eliminates dead spots and gives you the coverage you need with the best home WiFi solution around.</p>
+            <div class="whwf-hero__pricing">
+
+              <div class="whwf-hero__pricing__item">
+                <p class="whwf-hero__pricing__title"> Internet 200</p>
+
+                <div class="">
+                  <p class="whwf-hero__pricing__price">$44.99</p>
+                  <div class="whwf-hero__pricing__details">
+                    <span>per month</span>
+                    <span>autopay</span>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    list item
+                  </li>
+                </ul>
+              </div>
+
+              <div class="whwf-hero__pricing__item">
+                <p class="whwf-hero__pricing__title"> Internet 200</p>
+
+                <div class="whwf-hero__pricing__price">
+                  <p class="whwf-hero__pricing__price">$44.99</p>
+                  <div class="whwf-hero__pricing__details">
+                    <span>per month</span>
+                    <span>autopay</span>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    list item
+                  </li>
+                </ul>
+              </div>
+
+
+
+            </div>
+            <!-- end pricing -->
+            <div class="whwf-hero__buttons">
+              <button class="c-hero__button c-hero__button--gold" type="button">
+                Customize Order
+              </button>
+              <button class="o-button_white">Watch Video</button>
+            </div>
+            <!-- end buttons -->
+          </div>
+
+        </div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;whwf-hero&quot;&gt;
+    &lt;div class=&quot;whwf-hero__content&quot;&gt;
+        &lt;h2&gt;Extend your super-fast Internet to reach every corner of your home.&lt;/h2&gt;
+        &lt;p&gt;Whole-Home WiFi, powered by eero, eliminates dead spots and gives you the coverage you need with the best home WiFi solution around.&lt;/p&gt;
+        &lt;div class=&quot;whwf-hero__pricing&quot;&gt;
+
+            &lt;div class=&quot;whwf-hero__pricing__item&quot;&gt;
+                &lt;p class=&quot;whwf-hero__pricing__title&quot;&gt; Internet 200&lt;/p&gt;
+
+                &lt;div class=&quot;&quot;&gt;
+                    &lt;p class=&quot;whwf-hero__pricing__price&quot;&gt;$44.99&lt;/p&gt;
+                    &lt;div class=&quot;whwf-hero__pricing__details&quot;&gt;
+                        &lt;span&gt;per month&lt;/span&gt;
+                        &lt;span&gt;autopay&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        list item
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;whwf-hero__pricing__item&quot;&gt;
+                &lt;p class=&quot;whwf-hero__pricing__title&quot;&gt; Internet 200&lt;/p&gt;
+
+                &lt;div class=&quot;whwf-hero__pricing__price&quot;&gt;
+                    &lt;p class=&quot;whwf-hero__pricing__price&quot;&gt;$44.99&lt;/p&gt;
+                    &lt;div class=&quot;whwf-hero__pricing__details&quot;&gt;
+                        &lt;span&gt;per month&lt;/span&gt;
+                        &lt;span&gt;autopay&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        list item
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+
+
+        &lt;/div&gt;
+        &lt;!-- end pricing --&gt;
+        &lt;div class=&quot;whwf-hero__buttons&quot;&gt;
+            &lt;button class=&quot;c-hero__button c-hero__button--gold&quot; type=&quot;button&quot;&gt;
+                Customize Order
+            &lt;/button&gt;
+            &lt;button class=&quot;o-button_white&quot;&gt;Watch Video&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;!-- end buttons --&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre></div></div></div></div></div>
+      </div><!--/.sg-container-->
     </div><!--/.sg-main-->
   </div><!--/.sg-wrapper-->
+
+
 
   <!--[if gt IE 8]><!--><script src="vendor/prism/prism.js"></script><!--<![endif]-->
   <script src="js/sg-scripts.js"></script>
