@@ -1,0 +1,139 @@
+.c-hero {
+  height: 500px;
+  display: table;
+  width: 100%;
+  font-family: $p-font-stack;
+  color: $black;
+
+  .c-hero__wrapper {
+    display: table-cell;
+    font-family: $p-font-stack;
+    font-size: 34px;
+    padding-left: 14%;
+    position: relative;
+    vertical-align: middle;
+  }
+  .c-hero__title {
+    color: $black;
+    font-family: $p-font-stack;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-bottom: 12px;
+    margin-top: .9em;
+    text-shadow: none;
+    display: block;
+  }
+  .c-hero__subtitle{
+    color: rgb(0, 0, 0);
+    font-family: ars-maquette-web, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-bottom: 21px;
+    margin-top: .5em;
+    text-shadow: none;
+  }
+  .c-hero__card-group{
+    align-items: center;
+    display: flex;
+    font-family: ars-maquette-web, sans-serif;
+    font-size: 34px;
+    justify-content: space-between;
+    width: 475px;
+  }
+  .c-hero__card {
+    font-family: ars-maquette-web, sans-serif;
+    font-size: 34px;
+    margin-bottom: 21px;
+    max-width: 510px;
+    width: 237px;
+  }
+  .c-hero__card__label {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: ars-maquette-web, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: none;
+    text-transform: uppercase;
+  }
+  .c-hero__card__main {
+    align-items: flex-start;
+    display: flex;
+    font-family: ars-maquette-web, sans-serif;
+    font-size: 34px;
+    padding-top: 16px;
+    position: relative;
+  }
+  .c-hero__card__price {
+    color: $blue--deepSky;
+    display: block;
+    font-family: "Conduit Light", sans-serif;
+    font-size: 111px;
+    font-weight: 400;
+    text-shadow: none;
+  }
+  .c-hero__card__details {
+    color: $grey--dark;
+    font-family: ars-maquette-web, sans-serif;
+    font-size: 34px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 22px;
+    .c-hero__card__cents {
+      color: $blue--deepSky;
+      display: block;
+      font-family: ars-maquette-web, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      text-align: left;
+      text-shadow: none;
+    }
+    .c-hero__card__month {
+      color: $blue--deepSky;
+      display: flex;
+      font-family: "Conduit Light", sans-serif;
+      font-size: 20.4px;
+      margin-bottom: 3px;
+      text-shadow: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  }
+  .c-hero__card__disclaimer {
+    bottom: 20px;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: ars-maquette-web, sans-serif;
+    font-size: 11px;
+    font-weight: 200;
+    letter-spacing: 0.6px;
+    margin-left: 5px;
+    min-width: 220px;
+    text-shadow: none;
+  }
+  .c-hero__button__wrapper {
+    display: flex;
+    width: 100%;
+    font-family: ars-maquette-web, sans-serif;
+    font-size: 34px;
+    width: 700.05px
+  }
+}
+.type_singlePriceTwoButtons {
+  background-image: url("https://via.placeholder.com/1717x500");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 500px;
+  padding: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-position: 50% 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+

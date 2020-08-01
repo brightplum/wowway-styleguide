@@ -17,8 +17,8 @@
 .feed h5 {
   font-size: 13px;
   margin: 0 0 5px 0;
-  color: variables.$grey;
-  font-family: variables.$t-font-stack;
+  color: $grey--dark;
+  font-family: $t-font-stack;
   font-weight: 700;
 }
 .simply-scroll-list li {
@@ -31,7 +31,7 @@
   height: 95px;
 }
 .link-menu {
-  background-color: variables.$white;
+  background-color: $white;
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0,0,0,.28);
   display: none;
@@ -47,8 +47,8 @@
   width: 100%;
 }
 .link-menu a {
-  background-color: variables.$white;
-  color: variables.$black;
+  background-color: $white;
+  color: $black;
   display: block;
   font-size: 14px;
   margin: 0;

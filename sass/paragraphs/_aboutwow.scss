@@ -1,0 +1,37 @@
+.wow-hero {
+  align-items: center;
+  background-color: $white;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 52px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 52px;
+
+  @only screen and (max-width: 1024px){
+    padding: 52px 25px;
+  }
+}
+
+.wow-hero__content {
+  width: 966px;
+  text-align: center;
+
+  h2 {
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 50px;
+    margin-top: 0;
+    @only screen and (max-width: 800px) {
+      font-size: 32px !important;
+      line-height: 38px;
+    }
+  }
+  p {
+    font-weight: 200;
+    letter-spacing: .5px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

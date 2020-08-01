@@ -1,12 +1,12 @@
 .btn--primary{
-  background: variables.$red;
-  color: variables.$white !important;
+  background: $red;
+  color: $white !important;
   font-weight: 400;
   display: inline-block;
   padding: 5px 10px;
   text-decoration: none;
   text-transform: lowercase;
-  font-family: variables.$t-font-stack;
+  font-family: $t-font-stack;
   font-size: 1rem;
   transition: all ease-in 300ms;
   border: 0;
@@ -15,8 +15,8 @@
 }
 .btn-transparent {
   background-color: transparent;
-  color: variables.$white;
-  border: 1px solid variables.$white;
+  color: $white;
+  border: 1px solid $white;
   flex: 0 0 180px;
   height: 48px;
   box-sizing: border-box;
@@ -29,14 +29,14 @@
   cursor: pointer;
 }
 .o-button_blue-outline {
-  background-color: variables.$white;
+  background-color: $white;
   border-radius: 3px;
-  color: variables.$persianBlue;
+  color: $blue--persian;
   font-size: 14px;
   height: 45px;
   max-width: 225px;
   width: 140px;
-  border: 1px solid variables.$persianBlue;
+  border: 1px solid $blue--persian;
 }
 
 .hero #singlePriceTwoButtons {
@@ -45,11 +45,11 @@
   width: 225px !important;
 }
 .hero #singlePriceTwoButtons .hero-button-primary {
-  color: variables.$black !important;
-  background-color: variables.$orange !important;
+  color: $black !important;
+  background-color: $orange !important;
 }
 .hero-button-secondary{
-  color: variables.$white !important;
+  color: $white !important;
 }
 .hero-button-wrapper {
   font-size: 14px;
@@ -59,32 +59,29 @@
   min-width:200px;
 }
 .o-button_blue {
-  background-color: variables.$persianBlue;
-  color: variables.$white;
+  background-color: $blue--persian;
+  color: $white;
   font-weight: 600;
   font-size: 15px;
   border-radius: 3px;
   height:45px;
   max-width: 225px;
 }
-.o-button_gold {
-  font-size: 14px;
-  font-weight: 600;
-}
 .o-button_white {
   background-color: transparent;
   border-radius: 3px;
-  color: variables.$white;
+  color: $white;
   font-size: 14px;
   height: 45px;
   max-width: 225px;
   width: 140px;
-  border: 1px solid variables.$white;
+  border: 1px solid $white;
 }
 .c-wifi-cta button {
   width: 239px;
 }
-.whwf-slice-pricing-buttons button {
+.whwf-slice-pricing-buttons {}
+.c-hero__button {
   flex: 0 0 180px;
   height: 48px;
   box-sizing: border-box;
@@ -92,12 +89,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: .9em;
   border-radius: 3px;
   cursor: pointer;
+  width: 225px !important;
+  max-width: 225px;
+  margin-right: 10px;
 }
-.whwf-slice-pricing-buttons .whwf-button-gold {
-  background-color: variables.$orange;
-  color: variables.$black;
-  font-weight: bold;
+.c-hero__button :first-of-type {
+  margin-right: 10px;
+}
+.c-hero__button--gold {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: $orange;
+  color: $black;
+}
+.c-hero__button--blue {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: $blue--persian;
+  color: $white;
 }

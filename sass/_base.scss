@@ -1,11 +1,11 @@
 body {
   font-size: 16px;
-  font-family: variables.$p-font-stack;
+  font-family: $p-font-stack;
   color: rgb(88,89,91);
 }
 
 a {
-  color: variables.$persianBlue
+  color: $blue--persian;
   font-size: 14px;
 }
 
@@ -22,7 +22,7 @@ img, svg, video, audio {
 
 u {
   h1 {
-    color: variables.$black;
+    color: $black;
   }
 }
 
@@ -40,7 +40,7 @@ textarea {
 
 input[type="text"] {
   color: #333;
-  border: 1px solid variables.$lgrey;
+  border: 1px solid $grey--light;
   border-radius: 3px;
   padding: 12px 8px;
 }
