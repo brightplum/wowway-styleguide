@@ -11,3 +11,30 @@ $orange: #ffc40c;
 $bumblebee: #fff215;
 $blue--deepSky: #10ace3;
 $blue--persian: #0065e3;
+
+#RedBar {
+  background: #c62328;
+  color: white;
+  text-align: center;
+  .sfContentBlock {
+    padding: 15px;
+    a {
+      color: white;
+    }
+  }
+}
+#BlueBar {
+  .notification#StickyBar {
+    background-color: #1BAAE4;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    z-index: 11 !important;
+    width: 100%;
+  }
+}
+
+
