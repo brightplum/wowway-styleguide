@@ -9,7 +9,7 @@
   padding-right: 25px;
   padding-top: 52px;
 
-  @only screen and (max-width: 1024px){
+  @media only screen and (max-width: 1024px){
     padding: 52px 25px;
   }
 }
@@ -23,7 +23,7 @@
     font-weight: 300;
     line-height: 50px;
     margin-top: 0;
-    @only screen and (max-width: 800px) {
+    @media only screen and (max-width: 800px) {
       font-size: 32px !important;
       line-height: 38px;
     }

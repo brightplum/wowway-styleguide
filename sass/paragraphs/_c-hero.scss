@@ -114,12 +114,14 @@
     min-width: 220px;
     text-shadow: none;
   }
-  .c-hero__button__wrapper {
+  .hero__button__wrapper {
     display: flex;
     width: 100%;
-    font-family: ars-maquette-web, sans-serif;
-    font-size: 34px;
-    width: 700.05px
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 .type_singlePriceTwoButtons {
@@ -135,5 +137,10 @@
   background-position: 50% 50%;
   background-position-x: 50%;
   background-position-y: 50%;
+
+  .hero__button {
+    font-weight: 600 !important;
+    width: 225px !important;
+  }
 }
 

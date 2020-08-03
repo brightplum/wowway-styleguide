@@ -44,16 +44,24 @@
   font-weight: bold !important;
   width: 225px !important;
 }
-.hero #singlePriceTwoButtons .hero-button-primary {
+.hero__button-secondary {
+  color: $white !important;
+  background-color: $blue--persian !important;
+}
+.hero__button-primary {
   color: $black !important;
   background-color: $orange !important;
-}
-.hero-button-secondary{
-  color: $white !important;
 }
 .hero-button-wrapper {
   font-size: 14px;
   margin-right:10px;
+  display: flex;
+  width: 100%;
+  @media only screen and (max-width: 600px) {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .internet-hero {
   min-width:200px;
@@ -66,8 +74,13 @@
   border-radius: 3px;
   height:45px;
   max-width: 225px;
+  margin-right: 10px;
+  @media only screen and (max-width: 600px) {
+    margin-top: 10px;
+    text-align: center;
+  }
 }
-.o-button_white {
+.o-button_transparent {
   background-color: transparent;
   border-radius: 3px;
   color: $white;
@@ -75,38 +88,28 @@
   height: 45px;
   max-width: 225px;
   width: 140px;
-  border: 1px solid $white;
+  border: 1px solid $white !important;
 }
 .c-wifi-cta button {
   width: 239px;
 }
-.whwf-slice-pricing-buttons {}
-.c-hero__button {
-  flex: 0 0 180px;
+.hero__button {
+  :first-of-type {
+    margin-right: 10px;
+  }
+  font-size: 14px;
+  font-weight: 600;
+  max-width: 225px;
   height: 48px;
-  box-sizing: border-box;
-  padding: 0 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  justify-content: center;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 3px;
-  cursor: pointer;
-  width: 225px !important;
-  max-width: 225px;
-  margin-right: 10px;
-}
-.c-hero__button :first-of-type {
-  margin-right: 10px;
-}
-.c-hero__button--gold {
-  font-size: 14px;
-  font-weight: 600;
-  background-color: $orange;
-  color: $black;
-}
-.c-hero__button--blue {
-  font-size: 14px;
-  font-weight: 600;
-  background-color: $blue--persian;
-  color: $white;
+  box-sizing: border-box;
+  padding: 0 30px;
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 12px;
+  }
 }
