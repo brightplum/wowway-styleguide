@@ -1,0 +1,63 @@
+<div class="modal-overlay" id="locationModal">
+    <div class="modalhome location-modal">
+        <img src="/css/icons/close-black.svg" class="modal-close disableClose" id="locationClose" alt="">
+        <div id="emptyField" class="" style="height: 13px;"></div>
+        <img src="/css/icons/logo-w.svg" alt="wow logo">
+        <div class="modal-body">
+            <span class="modal-content title">Please select your location.</span>
+            <span class="modal-content">Choose your region and we'll find the best offers for you.</span>
+        </div>
+        <div class="modal-grid">
+            <div class="locations">
+                <div class="location">
+                    <span class="state">Alabama</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Auburn,AL,Alabama,8')">Auburn</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Dothan,AL,Alabama,13')">Dothan</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Huntsville,AL,Alabama,15')">Huntsville</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Montgomery,AL,Alabama,16')">Montgomery</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Valley,AL,Alabama,18')">Valley</span>
+                </div>
+                <div class="location">
+                    <span class="state">Florida</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Panama City,FL,Florida,17')">Panama City</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Pinellas,FL,Florida,9')">Pinellas</span>
+                </div>
+                <div class="location">
+                    <span class="state">Georgia</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Augusta,GA,Georgia,7')">Augusta</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Columbus,GA,Georgia,12')">Columbus</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Fort Gordon,GA,Georgia,14')">Fort Gordon</span>
+                </div>
+                <div class="location">
+                    <span class="state">Illinois</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Chicago,IL,Illinois,22')">Chicago</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Chicagoland,IL,Illinois,23')">Chicagoland</span>
+                </div>
+            </div>
+            <div class="locations">
+                <div class="location">
+                    <span class="state">Indiana</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Evansville,IN,Indiana,3')">Evansville</span>
+                </div>
+                <div class="location">
+                    <span class="state">Michigan</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Detroit,MI,Michigan,2')">Detroit</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Mid-Michigan,MI,Michigan,6')">Mid-Michigan</span>
+                </div>
+                <div class="location">
+                    <span class="state">Ohio</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Cleveland,OH,Ohio,5')">Cleveland</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Columbus,OH,Ohio,4')">Columbus</span>
+                </div>
+                <div class="location">
+                    <span class="state">South Carolina</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Charleston,SC,South Carolina,11')">Charleston</span>
+                </div>
+                <div class="location">
+                    <span class="state">Tennessee</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Knoxville,TN,Tennessee,10')">Knoxville</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

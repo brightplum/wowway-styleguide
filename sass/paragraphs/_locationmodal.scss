@@ -1,0 +1,32 @@
+.location-modal {
+  padding: 40px 30px;
+  width: 425px;
+  img {
+    width: 70px;
+    :not(.modal-close) {
+      width: 70px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    width: 80%;
+  }
+}
+.locations {
+  display: flex;
+  flex-direction: column;
+}
+.location {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.state {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 15px 0 5px;
+}
+.city {
+  color: $blue--persian;
+  font-size: 14px;
+  font-weight: 100;
+}
