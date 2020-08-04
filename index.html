@@ -47,7 +47,7 @@
         </li>
       </ul>
 
-      <ul class="sg-nav-group"><li class="sg-subnav-parent"><h2 id="sg-markup-base" class="sg-h2 sg-title">base</h2><ul class="sg-nav-group"><li><a href="#sg-markup-base-blockquote-html">blockquote</a></li><li><a href="#sg-markup-base-buttons-html">buttons</a></li><li><a href="#sg-markup-base-form-buttons-html">form buttons</a></li><li><a href="#sg-markup-base-form-contact-html">form contact</a></li><li><a href="#sg-markup-base-grid-layout-html">grid layout</a></li><li><a href="#sg-markup-base-modals-html">modals</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-patterns" class="sg-h2 sg-title">patterns</h2><ul class="sg-nav-group"><li><a href="#sg-markup-patterns-aboutwow-html">aboutwow</a></li><li><a href="#sg-markup-patterns-bars-html">bars</a></li><li><a href="#sg-markup-patterns-content-hero-html">content hero</a></li><li><a href="#sg-markup-patterns-footer-html">footer</a></li><li><a href="#sg-markup-patterns-navigation-html">navigation</a></li><li><a href="#sg-markup-patterns-whwf-html">whwf</a></li></ul></li></ul>    </div><!--/.sg-sidebar-->
+      <ul class="sg-nav-group"><li class="sg-subnav-parent"><h2 id="sg-markup-base" class="sg-h2 sg-title">base</h2><ul class="sg-nav-group"><li><a href="#sg-markup-base-blockquote-html">blockquote</a></li><li><a href="#sg-markup-base-buttons-html">buttons</a></li><li><a href="#sg-markup-base-form-buttons-html">form buttons</a></li><li><a href="#sg-markup-base-form-contact-html">form contact</a></li><li><a href="#sg-markup-base-grid-layout-html">grid layout</a></li><li><a href="#sg-markup-base-modals-html">modals</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-patterns" class="sg-h2 sg-title">patterns</h2><ul class="sg-nav-group"><li><a href="#sg-markup-patterns-aboutwow-html">aboutwow</a></li><li><a href="#sg-markup-patterns-bars-html">bars</a></li><li><a href="#sg-markup-patterns-card-section-html">card section</a></li><li><a href="#sg-markup-patterns-content-hero-html">content hero</a></li><li><a href="#sg-markup-patterns-footer-html">footer</a></li><li><a href="#sg-markup-patterns-locationModal-html">locationModal</a></li><li><a href="#sg-markup-patterns-navigation-html">navigation</a></li><li><a href="#sg-markup-patterns-streamingpartners-html">streamingpartners</a></li><li><a href="#sg-markup-patterns-whwf-html">whwf</a></li><li><a href="#sg-markup-patterns-wifiselection-html">wifiselection</a></li></ul></li></ul>    </div><!--/.sg-sidebar-->
 
     <div id="main" class="sg-main" role="main">
       <div class="sg-container">
@@ -521,6 +521,18 @@
             &lt;/div&gt;
          &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-card-section-html" class="sg-h2 sg-title">card section</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div id="OfferCards">
+
+    <div class="card-section">
+
+    </div>
+
+</div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div id=&quot;OfferCards&quot;&gt;
+
+    &lt;div class=&quot;card-section&quot;&gt;
+
+    &lt;/div&gt;
+
 &lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-content-hero-html" class="sg-h2 sg-title">content hero</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><!-- Hero Main -->
 <div id="" class="c-hero type_singlePriceTwoButtons">
 
@@ -821,7 +833,131 @@
         &lt;/div&gt;
 
     &lt;/div&gt;
-&lt;/footer&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-navigation-html" class="sg-h2 sg-title">navigation</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><!-- primary menu -->
+&lt;/footer&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-locationModal-html" class="sg-h2 sg-title">locationModal</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="modal-overlay" id="locationModal">
+    <div class="modalhome location-modal">
+        <img src="/css/icons/close-black.svg" class="modal-close disableClose" id="locationClose" alt="">
+        <div id="emptyField" class="" style="height: 13px;"></div>
+        <img src="/css/icons/logo-w.svg" alt="wow logo">
+        <div class="modal-body">
+            <span class="modal-content title">Please select your location.</span>
+            <span class="modal-content">Choose your region and we'll find the best offers for you.</span>
+        </div>
+        <div class="modal-grid">
+            <div class="locations">
+                <div class="location">
+                    <span class="state">Alabama</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Auburn,AL,Alabama,8')">Auburn</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Dothan,AL,Alabama,13')">Dothan</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Huntsville,AL,Alabama,15')">Huntsville</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Montgomery,AL,Alabama,16')">Montgomery</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Valley,AL,Alabama,18')">Valley</span>
+                </div>
+                <div class="location">
+                    <span class="state">Florida</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Panama City,FL,Florida,17')">Panama City</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Pinellas,FL,Florida,9')">Pinellas</span>
+                </div>
+                <div class="location">
+                    <span class="state">Georgia</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Augusta,GA,Georgia,7')">Augusta</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Columbus,GA,Georgia,12')">Columbus</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Fort Gordon,GA,Georgia,14')">Fort Gordon</span>
+                </div>
+                <div class="location">
+                    <span class="state">Illinois</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Chicago,IL,Illinois,22')">Chicago</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Chicagoland,IL,Illinois,23')">Chicagoland</span>
+                </div>
+            </div>
+            <div class="locations">
+                <div class="location">
+                    <span class="state">Indiana</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Evansville,IN,Indiana,3')">Evansville</span>
+                </div>
+                <div class="location">
+                    <span class="state">Michigan</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Detroit,MI,Michigan,2')">Detroit</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Mid-Michigan,MI,Michigan,6')">Mid-Michigan</span>
+                </div>
+                <div class="location">
+                    <span class="state">Ohio</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Cleveland,OH,Ohio,5')">Cleveland</span>
+                    <span class="city" onclick="setRegion('RegionData=North,Columbus,OH,Ohio,4')">Columbus</span>
+                </div>
+                <div class="location">
+                    <span class="state">South Carolina</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Charleston,SC,South Carolina,11')">Charleston</span>
+                </div>
+                <div class="location">
+                    <span class="state">Tennessee</span>
+                    <span class="city" onclick="setRegion('RegionData=South,Knoxville,TN,Tennessee,10')">Knoxville</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;modal-overlay&quot; id=&quot;locationModal&quot;&gt;
+    &lt;div class=&quot;modalhome location-modal&quot;&gt;
+        &lt;img src=&quot;/css/icons/close-black.svg&quot; class=&quot;modal-close disableClose&quot; id=&quot;locationClose&quot; alt=&quot;&quot;&gt;
+        &lt;div id=&quot;emptyField&quot; class=&quot;&quot; style=&quot;height: 13px;&quot;&gt;&lt;/div&gt;
+        &lt;img src=&quot;/css/icons/logo-w.svg&quot; alt=&quot;wow logo&quot;&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;span class=&quot;modal-content title&quot;&gt;Please select your location.&lt;/span&gt;
+            &lt;span class=&quot;modal-content&quot;&gt;Choose your region and we'll find the best offers for you.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-grid&quot;&gt;
+            &lt;div class=&quot;locations&quot;&gt;
+                &lt;div class=&quot;location&quot;&gt;
+                    &lt;span class=&quot;state&quot;&gt;Alabama&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Auburn,AL,Alabama,8')&quot;&gt;Auburn&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Dothan,AL,Alabama,13')&quot;&gt;Dothan&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Huntsville,AL,Alabama,15')&quot;&gt;Huntsville&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Montgomery,AL,Alabama,16')&quot;&gt;Montgomery&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Valley,AL,Alabama,18')&quot;&gt;Valley&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;location&quot;&gt;
+                    &lt;span class=&quot;state&quot;&gt;Florida&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Panama City,FL,Florida,17')&quot;&gt;Panama City&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Pinellas,FL,Florida,9')&quot;&gt;Pinellas&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;location&quot;&gt;
+                    &lt;span class=&quot;state&quot;&gt;Georgia&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Augusta,GA,Georgia,7')&quot;&gt;Augusta&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Columbus,GA,Georgia,12')&quot;&gt;Columbus&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Fort Gordon,GA,Georgia,14')&quot;&gt;Fort Gordon&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;location&quot;&gt;
+                    &lt;span class=&quot;state&quot;&gt;Illinois&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=North,Chicago,IL,Illinois,22')&quot;&gt;Chicago&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=North,Chicagoland,IL,Illinois,23')&quot;&gt;Chicagoland&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;locations&quot;&gt;
+                &lt;div class=&quot;location&quot;&gt;
+                    &lt;span class=&quot;state&quot;&gt;Indiana&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=North,Evansville,IN,Indiana,3')&quot;&gt;Evansville&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;location&quot;&gt;
+                    &lt;span class=&quot;state&quot;&gt;Michigan&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=North,Detroit,MI,Michigan,2')&quot;&gt;Detroit&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=North,Mid-Michigan,MI,Michigan,6')&quot;&gt;Mid-Michigan&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;location&quot;&gt;
+                    &lt;span class=&quot;state&quot;&gt;Ohio&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=North,Cleveland,OH,Ohio,5')&quot;&gt;Cleveland&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=North,Columbus,OH,Ohio,4')&quot;&gt;Columbus&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;location&quot;&gt;
+                    &lt;span class=&quot;state&quot;&gt;South Carolina&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Charleston,SC,South Carolina,11')&quot;&gt;Charleston&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;location&quot;&gt;
+                    &lt;span class=&quot;state&quot;&gt;Tennessee&lt;/span&gt;
+                    &lt;span class=&quot;city&quot; onclick=&quot;setRegion('RegionData=South,Knoxville,TN,Tennessee,10')&quot;&gt;Knoxville&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-navigation-html" class="sg-h2 sg-title">navigation</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><!-- primary menu -->
 <div class="nav-primary">
     <div class="nav-primary__links__wrapper">
         <div class="nav-primary__links">
@@ -971,6 +1107,414 @@
                 &lt;/div&gt;
             &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-streamingpartners-html" class="sg-h2 sg-title">streamingpartners</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="streaming-partners-table">
+    <div class="partner-row">
+        <div class="column blank"></div>
+        <div class="column partner-link"><img src="https://www.wowway.com/images/wow/channels-and-streaming/youtubetv4e79e1d7ad5960e98a37ff01000e5b91.png?sfvrsn=152081af_0" alt="YouTubeTV"><a class="o-button__blue" href="https://tv.youtube.com/wow" target="_blank">View partner site <img src="https://dmlvp8h7o18vp.cloudfront.net/images/external-link-mobile.svg"></a></div>
+        <div class="column partner-link"><img src="https://www.wowway.com/images/wow/channels-and-streaming/fubotv9d91e1d7ad5960e98a37ff01000e5b91.png?sfvrsn=c4c881af_0" alt="fubotv"><a class="o-button__blue" href="http://www.fubotv.com/wow" target="_blank">View partner site <img src="https://dmlvp8h7o18vp.cloudfront.net/images/external-link-mobile.svg"></a></div>
+        <div class="column partner-link"><img src="https://www.wowway.com/images/wow/tv/sling_new_logo_black_outline_1_100x61.png?sfvrsn=775380af_14" alt="Sling_New_Logo_Black_Outline_1_100x61"><a class="o-button__blue" href="https://www.sling.com/?AF=1&amp;utm_medium=affiliate&amp;utm_source=wow&amp;utm_campaign=web&amp;affiliate=wow" target="_blank">View partner site <img src="https://dmlvp8h7o18vp.cloudfront.net/images/external-link-mobile.svg"></a></div>
+        <div class="column partner-link"><img src="https://www.wowway.com/images/wow/channels-and-streaming/philob891e1d7ad5960e98a37ff01000e5b91.png?sfvrsn=e3c881af_0" alt="philo"><a class="o-button__blue" href="https://go.philo.com/wow" target="_blank">View partner site <img src="https://dmlvp8h7o18vp.cloudfront.net/images/external-link-mobile.svg"></a></div>
+    </div>
+    <div class="partner-row">
+        <div class="column price">
+            <p>
+                <strong>Price</strong>
+            </p>
+        </div>
+        <div class="column price text-center justify-center">
+            <p class="font-size-24">
+                <strong>$64.99</strong><span class="font-size-18">/mo</span>
+                <br><small>Terms apply</small>
+            </p>
+        </div>
+        <div class="column price text-center justify-center">
+            <p class="font-size-24">
+                <strong>$59.99+</strong><span class="font-size-18">/mo</span>
+                <br><small>Terms apply</small>
+            </p>
+        </div>
+        <div class="column price text-center justify-center">
+            <p class="font-size-24">
+                <strong>$30+</strong><span class="font-size-18">/mo</span>
+                <br><small>Terms apply</small>
+            </p>
+        </div>
+        <div class="column price text-center justify-center">
+            <p class="font-size-24">
+                <strong>$20</strong><span class="font-size-18">/mo</span>
+            </p>
+        </div>
+    </div>
+    <div class="partner-row">
+        <div class="column local-channels">
+            <p>
+                <strong>Local Channel Availability</strong>
+            </p>
+        </div>
+        <div class="column local-channels text-center justify-center">
+            <p>Has local channels:&nbsp;ABC, CBS, FOX, NBC</p>
+        </div>
+        <div class="column local-channels text-center justify-center">
+            <p>Has local channels:&nbsp;CBS, FOX, NBC</p>
+        </div>
+        <div class="column local-channels text-center justify-center">
+        </div>
+        <div class="column local-channels text-center justify-center">
+        </div>
+    </div>
+    <div class="partner-row">
+        <div class="column channels">
+            <p>
+                <strong>Channels</strong>
+            </p>
+        </div>
+        <div class="column channels text-center">
+            <p>
+                <span class="streaming-partner-channels" data-target="modal-YouTubeTV"><strong class="font-size-24">85+</strong><br>View Channel Lineup</span>
+            </p>
+        </div>
+        <div class="column channels text-center">
+            <p>
+                <span class="streaming-partner-channels" data-target="modal-FuboTV"><strong class="font-size-24">100+</strong><br>View Channel Lineup</span>
+            </p>
+        </div>
+        <div class="column channels text-center">
+            <p>
+                <span class="streaming-partner-channels" data-target="modal-Sling"><strong class="font-size-24">45+</strong><br>View Channel Lineup</span>
+            </p>
+        </div>
+        <div class="column channels text-center">
+            <p>
+                <span class="streaming-partner-channels" data-target="modal-Philo"><strong class="font-size-24">59</strong><br>View Channel Lineup</span>
+            </p>
+        </div>
+    </div>
+    <div class="partner-row">
+        <div class="column dvr">
+            <p>
+                <strong>DVR</strong>
+            </p>
+        </div>
+        <div class="column dvr">
+            <ul>
+                <li>Free unlimited storage space</li>
+                <li>Recordings kept for up to 9 months</li>
+                <li>Fast forward and rewind</li>
+            </ul>
+        </div>
+        <div class="column dvr">
+            <ul>
+                <li>Up to 500 hrs of storage</li>
+            </ul>
+        </div>
+        <div class="column dvr">
+            <ul>
+                <li>10 hrs included, may upgrade to 50 hrs</li>
+                <li>Shows kept indefinitely while active</li>
+            </ul>
+        </div>
+        <div class="column dvr">
+            <ul>
+                <li>Unlimited storage</li>
+                <li>Shows kept for up to 30 days</li>
+                <li>No extra charge</li>
+            </ul>
+        </div>
+    </div>
+    <div class="partner-row">
+        <div class="column simultaneous-streaming">
+            <p>
+                <strong>Simultaneous streaming</strong>
+            </p>
+        </div>
+        <div class="column simultaneous-streaming text-center justify-center">
+            <p>3 devices</p>
+        </div>
+        <div class="column simultaneous-streaming text-center justify-center">
+            <p>2 devices</p>
+        </div>
+        <div class="column simultaneous-streaming text-center justify-center">
+            <p>Up to 3 devices<br>
+                <span style="font-size: 10px;">Varies based on service</span></p>
+        </div>
+        <div class="column simultaneous-streaming text-center justify-center">
+            <p>3 devices</p>
+        </div>
+    </div>
+    <div class="partner-row">
+        <div class="column profiles">
+            <p>
+                <strong>Profiles within subscription</strong>
+            </p>
+        </div>
+        <div class="column profiles text-center justify-center">
+            <p>6 profiles</p>
+        </div>
+        <div class="column profiles text-center justify-center">
+            <p>1 profile*</p>
+            <p><span style="font-size: 10px;">*Up to 3 simultaneous streams</span></p>
+        </div>
+        <div class="column profiles text-center justify-center">
+            <p>1 profile</p>
+        </div>
+        <div class="column profiles text-center justify-center">
+            <p>10 profiles</p>
+        </div>
+    </div>
+    <div class="partner-row">
+        <div class="column add-ons">
+            <p>
+                <strong>Add-ons available*</strong>
+            </p>
+            <p>
+                <small>* Additional charge will apply.</small>
+            </p>
+        </div>
+        <div class="column add-ons">
+            <ul>
+                <li>Channel add-ons</li>
+            </ul>
+        </div>
+        <div class="column add-ons">
+            <ul>
+                <li>DVR space</li>
+                <li>Channel add-ons</li>
+                <li>Number of devices for streaming</li>
+            </ul>
+        </div>
+        <div class="column add-ons">
+            <ul>
+                <li>Additional Cloud DVR storage</li>
+                <li>Channel add-ons</li>
+                <li>Spanish language programming</li>
+            </ul>
+        </div>
+        <div class="column add-ons">
+        </div>
+    </div>
+    <div class="partner-row">
+        <div class="column free-trial">
+            <p>
+                <strong>Free trial</strong>
+            </p>
+        </div>
+        <div class="column free-trial text-center justify-center">
+            <p>Free trial available</p>
+        </div>
+        <div class="column free-trial text-center justify-center">
+            <p>7-day trial</p>
+        </div>
+        <div class="column free-trial text-center justify-center">
+            <p>Introductory offer - $10 off first month</p>
+        </div>
+        <div class="column free-trial text-center justify-center">
+            <p>7-day trial</p>
+        </div>
+    </div>
+</div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;streaming-partners-table&quot;&gt;
+    &lt;div class=&quot;partner-row&quot;&gt;
+        &lt;div class=&quot;column blank&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;column partner-link&quot;&gt;&lt;img src=&quot;https://www.wowway.com/images/wow/channels-and-streaming/youtubetv4e79e1d7ad5960e98a37ff01000e5b91.png?sfvrsn=152081af_0&quot; alt=&quot;YouTubeTV&quot;&gt;&lt;a class=&quot;o-button__blue&quot; href=&quot;https://tv.youtube.com/wow&quot; target=&quot;_blank&quot;&gt;View partner site &lt;img src=&quot;https://dmlvp8h7o18vp.cloudfront.net/images/external-link-mobile.svg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class=&quot;column partner-link&quot;&gt;&lt;img src=&quot;https://www.wowway.com/images/wow/channels-and-streaming/fubotv9d91e1d7ad5960e98a37ff01000e5b91.png?sfvrsn=c4c881af_0&quot; alt=&quot;fubotv&quot;&gt;&lt;a class=&quot;o-button__blue&quot; href=&quot;http://www.fubotv.com/wow&quot; target=&quot;_blank&quot;&gt;View partner site &lt;img src=&quot;https://dmlvp8h7o18vp.cloudfront.net/images/external-link-mobile.svg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class=&quot;column partner-link&quot;&gt;&lt;img src=&quot;https://www.wowway.com/images/wow/tv/sling_new_logo_black_outline_1_100x61.png?sfvrsn=775380af_14&quot; alt=&quot;Sling_New_Logo_Black_Outline_1_100x61&quot;&gt;&lt;a class=&quot;o-button__blue&quot; href=&quot;https://www.sling.com/?AF=1&amp;amp;utm_medium=affiliate&amp;amp;utm_source=wow&amp;amp;utm_campaign=web&amp;amp;affiliate=wow&quot; target=&quot;_blank&quot;&gt;View partner site &lt;img src=&quot;https://dmlvp8h7o18vp.cloudfront.net/images/external-link-mobile.svg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class=&quot;column partner-link&quot;&gt;&lt;img src=&quot;https://www.wowway.com/images/wow/channels-and-streaming/philob891e1d7ad5960e98a37ff01000e5b91.png?sfvrsn=e3c881af_0&quot; alt=&quot;philo&quot;&gt;&lt;a class=&quot;o-button__blue&quot; href=&quot;https://go.philo.com/wow&quot; target=&quot;_blank&quot;&gt;View partner site &lt;img src=&quot;https://dmlvp8h7o18vp.cloudfront.net/images/external-link-mobile.svg&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;partner-row&quot;&gt;
+        &lt;div class=&quot;column price&quot;&gt;
+            &lt;p&gt;
+                &lt;strong&gt;Price&lt;/strong&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column price text-center justify-center&quot;&gt;
+            &lt;p class=&quot;font-size-24&quot;&gt;
+                &lt;strong&gt;$64.99&lt;/strong&gt;&lt;span class=&quot;font-size-18&quot;&gt;/mo&lt;/span&gt;
+                &lt;br&gt;&lt;small&gt;Terms apply&lt;/small&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column price text-center justify-center&quot;&gt;
+            &lt;p class=&quot;font-size-24&quot;&gt;
+                &lt;strong&gt;$59.99+&lt;/strong&gt;&lt;span class=&quot;font-size-18&quot;&gt;/mo&lt;/span&gt;
+                &lt;br&gt;&lt;small&gt;Terms apply&lt;/small&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column price text-center justify-center&quot;&gt;
+            &lt;p class=&quot;font-size-24&quot;&gt;
+                &lt;strong&gt;$30+&lt;/strong&gt;&lt;span class=&quot;font-size-18&quot;&gt;/mo&lt;/span&gt;
+                &lt;br&gt;&lt;small&gt;Terms apply&lt;/small&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column price text-center justify-center&quot;&gt;
+            &lt;p class=&quot;font-size-24&quot;&gt;
+                &lt;strong&gt;$20&lt;/strong&gt;&lt;span class=&quot;font-size-18&quot;&gt;/mo&lt;/span&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;partner-row&quot;&gt;
+        &lt;div class=&quot;column local-channels&quot;&gt;
+            &lt;p&gt;
+                &lt;strong&gt;Local Channel Availability&lt;/strong&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column local-channels text-center justify-center&quot;&gt;
+            &lt;p&gt;Has local channels:&amp;nbsp;ABC, CBS, FOX, NBC&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column local-channels text-center justify-center&quot;&gt;
+            &lt;p&gt;Has local channels:&amp;nbsp;CBS, FOX, NBC&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column local-channels text-center justify-center&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column local-channels text-center justify-center&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;partner-row&quot;&gt;
+        &lt;div class=&quot;column channels&quot;&gt;
+            &lt;p&gt;
+                &lt;strong&gt;Channels&lt;/strong&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column channels text-center&quot;&gt;
+            &lt;p&gt;
+                &lt;span class=&quot;streaming-partner-channels&quot; data-target=&quot;modal-YouTubeTV&quot;&gt;&lt;strong class=&quot;font-size-24&quot;&gt;85+&lt;/strong&gt;&lt;br&gt;View Channel Lineup&lt;/span&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column channels text-center&quot;&gt;
+            &lt;p&gt;
+                &lt;span class=&quot;streaming-partner-channels&quot; data-target=&quot;modal-FuboTV&quot;&gt;&lt;strong class=&quot;font-size-24&quot;&gt;100+&lt;/strong&gt;&lt;br&gt;View Channel Lineup&lt;/span&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column channels text-center&quot;&gt;
+            &lt;p&gt;
+                &lt;span class=&quot;streaming-partner-channels&quot; data-target=&quot;modal-Sling&quot;&gt;&lt;strong class=&quot;font-size-24&quot;&gt;45+&lt;/strong&gt;&lt;br&gt;View Channel Lineup&lt;/span&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column channels text-center&quot;&gt;
+            &lt;p&gt;
+                &lt;span class=&quot;streaming-partner-channels&quot; data-target=&quot;modal-Philo&quot;&gt;&lt;strong class=&quot;font-size-24&quot;&gt;59&lt;/strong&gt;&lt;br&gt;View Channel Lineup&lt;/span&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;partner-row&quot;&gt;
+        &lt;div class=&quot;column dvr&quot;&gt;
+            &lt;p&gt;
+                &lt;strong&gt;DVR&lt;/strong&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column dvr&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Free unlimited storage space&lt;/li&gt;
+                &lt;li&gt;Recordings kept for up to 9 months&lt;/li&gt;
+                &lt;li&gt;Fast forward and rewind&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column dvr&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Up to 500 hrs of storage&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column dvr&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;10 hrs included, may upgrade to 50 hrs&lt;/li&gt;
+                &lt;li&gt;Shows kept indefinitely while active&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column dvr&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Unlimited storage&lt;/li&gt;
+                &lt;li&gt;Shows kept for up to 30 days&lt;/li&gt;
+                &lt;li&gt;No extra charge&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;partner-row&quot;&gt;
+        &lt;div class=&quot;column simultaneous-streaming&quot;&gt;
+            &lt;p&gt;
+                &lt;strong&gt;Simultaneous streaming&lt;/strong&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column simultaneous-streaming text-center justify-center&quot;&gt;
+            &lt;p&gt;3 devices&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column simultaneous-streaming text-center justify-center&quot;&gt;
+            &lt;p&gt;2 devices&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column simultaneous-streaming text-center justify-center&quot;&gt;
+            &lt;p&gt;Up to 3 devices&lt;br&gt;
+                &lt;span style=&quot;font-size: 10px;&quot;&gt;Varies based on service&lt;/span&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column simultaneous-streaming text-center justify-center&quot;&gt;
+            &lt;p&gt;3 devices&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;partner-row&quot;&gt;
+        &lt;div class=&quot;column profiles&quot;&gt;
+            &lt;p&gt;
+                &lt;strong&gt;Profiles within subscription&lt;/strong&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column profiles text-center justify-center&quot;&gt;
+            &lt;p&gt;6 profiles&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column profiles text-center justify-center&quot;&gt;
+            &lt;p&gt;1 profile*&lt;/p&gt;
+            &lt;p&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;*Up to 3 simultaneous streams&lt;/span&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column profiles text-center justify-center&quot;&gt;
+            &lt;p&gt;1 profile&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column profiles text-center justify-center&quot;&gt;
+            &lt;p&gt;10 profiles&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;partner-row&quot;&gt;
+        &lt;div class=&quot;column add-ons&quot;&gt;
+            &lt;p&gt;
+                &lt;strong&gt;Add-ons available*&lt;/strong&gt;
+            &lt;/p&gt;
+            &lt;p&gt;
+                &lt;small&gt;* Additional charge will apply.&lt;/small&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column add-ons&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Channel add-ons&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column add-ons&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;DVR space&lt;/li&gt;
+                &lt;li&gt;Channel add-ons&lt;/li&gt;
+                &lt;li&gt;Number of devices for streaming&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column add-ons&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Additional Cloud DVR storage&lt;/li&gt;
+                &lt;li&gt;Channel add-ons&lt;/li&gt;
+                &lt;li&gt;Spanish language programming&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column add-ons&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;partner-row&quot;&gt;
+        &lt;div class=&quot;column free-trial&quot;&gt;
+            &lt;p&gt;
+                &lt;strong&gt;Free trial&lt;/strong&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column free-trial text-center justify-center&quot;&gt;
+            &lt;p&gt;Free trial available&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column free-trial text-center justify-center&quot;&gt;
+            &lt;p&gt;7-day trial&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column free-trial text-center justify-center&quot;&gt;
+            &lt;p&gt;Introductory offer - $10 off first month&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;column free-trial text-center justify-center&quot;&gt;
+            &lt;p&gt;7-day trial&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-whwf-html" class="sg-h2 sg-title">whwf</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="whwf-hero">
     <div class="whwf-hero__content">
         <h2>Extend your super-fast Internet to reach every corner of your home.</h2>
@@ -1073,6 +1617,168 @@
         &lt;!-- end buttons --&gt;
     &lt;/div&gt;
 
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-wifiselection-html" class="sg-h2 sg-title">wifiselection</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="wifi-selection-section">
+    <div class="wifi-selection-carousel" id="wifiCarousel">
+        <div class="carousel-img active" id="img1">
+            <img src="" alt="wow-way+eero">
+        </div>
+        <div class="carousel-img" id="img2">
+            <img src="" alt="wow-way+eero">
+        </div>
+        <div class="carousel-img" id="img3">
+            <img src="" alt="wow-way+eero">
+        </div>
+        <div class="wifi-selection-carousel-indication">
+            <div class="carousel-indication active" id="c1">&nbsp;</div>
+            <div class="carousel-indication" id="c2">&nbsp;</div>
+            <div class="carousel-indication" id="c3">&nbsp;</div>
+        </div>
+    </div>
+    <div class="wifi-selection-content">
+        <span class="wifi-selection-title">Get a Whole-Home Mesh WiFi System that just works. </span>
+        <span class="wifi-selection-info">Includes one eero Pro + one eero beacon.</span>
+        <span class="wifi-selection-info">Choose from 100 Mbps, 200 Mbps, 500 Mbps and 1 Gig Internet. </span>
+        <p>&nbsp;</p>
+        <div class="wifi-selection">
+            <div class="wifi-selection-row">
+                <div class="wifi-selection-row-content">
+                    <div class="wifi-pricing">
+                        <span class="price-label">Fast (Internet 100)</span>
+                        <span class="price"><strong>$39.99</strong></span>
+                    </div>
+                    <div class="wifi-price-separator">+</div>
+                    <div class="wifi-pricing">
+                        <span class="price-label">whole-home wifi</span>
+                        <span class="price"><strong>$9.99</strong> per mo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wifi-selection-row">
+                <div class="wifi-selection-row-content">
+                    <div class="wifi-pricing">
+                        <span class="price-label">Fast (Internet 200)</span>
+                        <span class="price"><strong>$44.99</strong></span>
+                    </div>
+                    <div class="wifi-price-separator">+</div>
+                    <div class="wifi-pricing">
+                        <span class="price-label">whole-home wifi</span>
+                        <span class="price"><strong>$9.99</strong> per mo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wifi-selection-row">
+                <div class="wifi-selection-row-content">
+                    <div class="wifi-pricing">
+                        <span class="price-label">Faster (Internet 500)</span>
+                        <span class="price"><strong>$54.99</strong></span>
+                    </div>
+                    <div class="wifi-price-separator">+</div>
+                    <div class="wifi-pricing">
+                        <span class="price-label">whole-home wifi</span>
+                        <span class="price"><strong>$9.99</strong> per mo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wifi-selection-row">
+                <div class="wifi-selection-row-content">
+                    <div class="wifi-pricing">
+                        <span class="price-label">Fastest (Internet 1000)</span>
+                        <span class="price"><strong>$74.99</strong></span>
+                    </div>
+                    <div class="wifi-price-separator">+</div>
+                    <div class="wifi-pricing">
+                        <span class="price"><strong>FREE</strong></span>
+                        <span class="price-label">whole-home wifi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p> </p>
+        <a href="/#offer-buttons">
+            <button type="button" class="o-button_blue">Shop Whole-Home WiFi Offers</button>
+        </a>
+    </div>
+</div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;wifi-selection-section&quot;&gt;
+    &lt;div class=&quot;wifi-selection-carousel&quot; id=&quot;wifiCarousel&quot;&gt;
+        &lt;div class=&quot;carousel-img active&quot; id=&quot;img1&quot;&gt;
+            &lt;img src=&quot;&quot; alt=&quot;wow-way+eero&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;carousel-img&quot; id=&quot;img2&quot;&gt;
+            &lt;img src=&quot;&quot; alt=&quot;wow-way+eero&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;carousel-img&quot; id=&quot;img3&quot;&gt;
+            &lt;img src=&quot;&quot; alt=&quot;wow-way+eero&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wifi-selection-carousel-indication&quot;&gt;
+            &lt;div class=&quot;carousel-indication active&quot; id=&quot;c1&quot;&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;div class=&quot;carousel-indication&quot; id=&quot;c2&quot;&gt;&amp;nbsp;&lt;/div&gt;
+            &lt;div class=&quot;carousel-indication&quot; id=&quot;c3&quot;&gt;&amp;nbsp;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wifi-selection-content&quot;&gt;
+        &lt;span class=&quot;wifi-selection-title&quot;&gt;Get a Whole-Home Mesh WiFi System that just works. &lt;/span&gt;
+        &lt;span class=&quot;wifi-selection-info&quot;&gt;Includes one eero Pro + one eero beacon.&lt;/span&gt;
+        &lt;span class=&quot;wifi-selection-info&quot;&gt;Choose from 100 Mbps, 200 Mbps, 500 Mbps and 1 Gig Internet. &lt;/span&gt;
+        &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;div class=&quot;wifi-selection&quot;&gt;
+            &lt;div class=&quot;wifi-selection-row&quot;&gt;
+                &lt;div class=&quot;wifi-selection-row-content&quot;&gt;
+                    &lt;div class=&quot;wifi-pricing&quot;&gt;
+                        &lt;span class=&quot;price-label&quot;&gt;Fast (Internet 100)&lt;/span&gt;
+                        &lt;span class=&quot;price&quot;&gt;&lt;strong&gt;$39.99&lt;/strong&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;wifi-price-separator&quot;&gt;+&lt;/div&gt;
+                    &lt;div class=&quot;wifi-pricing&quot;&gt;
+                        &lt;span class=&quot;price-label&quot;&gt;whole-home wifi&lt;/span&gt;
+                        &lt;span class=&quot;price&quot;&gt;&lt;strong&gt;$9.99&lt;/strong&gt; per mo&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;wifi-selection-row&quot;&gt;
+                &lt;div class=&quot;wifi-selection-row-content&quot;&gt;
+                    &lt;div class=&quot;wifi-pricing&quot;&gt;
+                        &lt;span class=&quot;price-label&quot;&gt;Fast (Internet 200)&lt;/span&gt;
+                        &lt;span class=&quot;price&quot;&gt;&lt;strong&gt;$44.99&lt;/strong&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;wifi-price-separator&quot;&gt;+&lt;/div&gt;
+                    &lt;div class=&quot;wifi-pricing&quot;&gt;
+                        &lt;span class=&quot;price-label&quot;&gt;whole-home wifi&lt;/span&gt;
+                        &lt;span class=&quot;price&quot;&gt;&lt;strong&gt;$9.99&lt;/strong&gt; per mo&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;wifi-selection-row&quot;&gt;
+                &lt;div class=&quot;wifi-selection-row-content&quot;&gt;
+                    &lt;div class=&quot;wifi-pricing&quot;&gt;
+                        &lt;span class=&quot;price-label&quot;&gt;Faster (Internet 500)&lt;/span&gt;
+                        &lt;span class=&quot;price&quot;&gt;&lt;strong&gt;$54.99&lt;/strong&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;wifi-price-separator&quot;&gt;+&lt;/div&gt;
+                    &lt;div class=&quot;wifi-pricing&quot;&gt;
+                        &lt;span class=&quot;price-label&quot;&gt;whole-home wifi&lt;/span&gt;
+                        &lt;span class=&quot;price&quot;&gt;&lt;strong&gt;$9.99&lt;/strong&gt; per mo&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;wifi-selection-row&quot;&gt;
+                &lt;div class=&quot;wifi-selection-row-content&quot;&gt;
+                    &lt;div class=&quot;wifi-pricing&quot;&gt;
+                        &lt;span class=&quot;price-label&quot;&gt;Fastest (Internet 1000)&lt;/span&gt;
+                        &lt;span class=&quot;price&quot;&gt;&lt;strong&gt;$74.99&lt;/strong&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;wifi-price-separator&quot;&gt;+&lt;/div&gt;
+                    &lt;div class=&quot;wifi-pricing&quot;&gt;
+                        &lt;span class=&quot;price&quot;&gt;&lt;strong&gt;FREE&lt;/strong&gt;&lt;/span&gt;
+                        &lt;span class=&quot;price-label&quot;&gt;whole-home wifi&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p&gt; &lt;/p&gt;
+        &lt;a href=&quot;/#offer-buttons&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;o-button_blue&quot;&gt;Shop Whole-Home WiFi Offers&lt;/button&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre></div></div></div></div></div>
       </div><!--/.sg-container-->
     </div><!--/.sg-main-->
