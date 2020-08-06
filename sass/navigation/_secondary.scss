@@ -22,9 +22,9 @@
 }
 
 .nav-secondary__content {
+  height: 100%;
   align-items: center;
   display: flex;
-  height: 30px;
   max-width: 1440px;
   padding: 15px 0;
 }
@@ -100,7 +100,6 @@
 }
 .nav-secondary-link .top-link, .nav-secondary-link span {
   color: #1d1d1d;
-  display: block;
   font-size: 14px;
   height: 100%;
   padding-left: 3px;
@@ -181,7 +180,6 @@
   width: calc(100% - 50px);
 
   span {
-    display:block;
 
     .close {
       font-size: 32px;

@@ -6,6 +6,9 @@
 @import 'forms';
 @import 'modal';
 @import 'lists';
+@import 'navigation/primary';
+@import 'navigation/secondary';
+@import '_footer.scss';
 @import 'paragraphs/c-hero';
 @import 'paragraphs/whwf';
 @import 'paragraphs/aboutwow';
@@ -13,6 +16,5 @@
 @import 'paragraphs/offercard';
 @import 'paragraphs/wifiselection';
 @import 'paragraphs/streamingpartners';
-@import 'navigation/primary';
-@import 'navigation/secondary';
-@import '_footer.scss';
+@import 'paragraphs/phonerates';
+@import 'paragraphs/faq';

@@ -21,7 +21,7 @@ u h1 {
      border: none;
      text-align: center;
  }
- .btn--primary{
+ .btn--red{
      background: #c62328;
      color: #fff !important;
      font-weight: 400;
@@ -36,7 +36,7 @@ u h1 {
      -webkit-appearance: button;
      cursor: pointer;
  }
- .btn-transparent {
+ .btn--transparent {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
@@ -51,7 +51,7 @@ u h1 {
     border-radius: 3px;
     cursor: pointer;
  }
- .o-button_blue-outline {
+ .btn--blue {
      background-color: #fff;
      border-radius: 3px;
      color: #0065e3;
@@ -81,7 +81,7 @@ u h1 {
  .internet-hero {
      min-width:200px;
  }
- .o-button_blue {
+ .btn--blue {
      background-color: #0065e3;
      color: #fff;
      font-weight: 600;

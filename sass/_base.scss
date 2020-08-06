@@ -6,7 +6,6 @@ body {
 
 a {
   color: $blue--persian;
-  font-size: 14px;
 }
 
 li {
@@ -29,6 +28,7 @@ u {
 button {
   border: none;
   text-align: center;
+  cursor: pointer;
 }
 
 textarea {
@@ -62,4 +62,7 @@ footer {
 }
 .font-size-24 {
   font-size: 24px;
+}
+.hidden {
+  display: none;
 }

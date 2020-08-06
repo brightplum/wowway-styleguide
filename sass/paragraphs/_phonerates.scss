@@ -1,0 +1,149 @@
+.phone-int-rates {
+  position: relative;
+}
+.phone-int-rates-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 35vw;
+}
+.phone-int-rates-image {
+  position: relative;
+  background-image: url('');
+  background-repeat: no-repeat;
+  @media only screen and (min-width: 801px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background-size: cover;
+    ::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 18vw;
+      background-image: linear-gradient(to left, #fff 20%, transparent);
+    }
+    ::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 120px;
+      background-image: linear-gradient(transparent, #fff);
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    height: 67vw;
+    background-size: cover;
+    ::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 18vw;
+      background-image: linear-gradient(to left, #fff 20%, transparent);
+    }
+    ::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 120px;
+      background-image: linear-gradient(transparent,#fff);
+    }
+  }
+}
+.phone-int-rates-content {
+  position: relative;
+  box-sizing: border-box;
+  h2 {
+    font-size: 48px;
+    margin-top: inherit;
+    font-weight: normal;
+  }
+  p {
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.6em;
+  }
+  .button-select {
+    position: relative;
+    z-index: 4;
+    display: inline-block;
+    ::after {
+      content: '';
+      background-image: url(/assets/img/chevron-white.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right center;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 14px;
+      margin: auto;
+      transition: transform .15s ease-out;
+    }
+  }
+  option {
+    background-color: white;
+    color: black;
+  }
+  @media only screen and (min-width: 801px) {
+    padding: 100px 64px 300px 24px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-left: auto;
+  }
+  @media only screen and (max-width: 800px) {
+    padding: 48px 24px;
+  }
+}
+.section-subheader {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.phone-int-rates-tables {
+  margin-top: 18px;
+  @media only screen and (min-width: 801px){
+    position: absolute;
+    right: 24px;
+    left: 24px;
+    max-height: 320px;
+    overflow-y: auto;
+  }
+  @media only screen and (max-width: 800px){
+    width: 100%;
+  }
+  table {
+    display: none;
+    font-size: .8rem;
+    background-color: #fff;
+    width: 100%;
+  }
+  tbody tr:first-child td {
+    border-top: 1px solid #eaeaea;
+  }
+  td, th {
+    height: 40px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    border-spacing: 0;
+    margin: 0;
+    border-collapse: collapse;
+  }
+  td {
+    border-bottom: 1px solid #eaeaea;
+    :first-child {
+      border-left: 1px solid #eaeaea;
+    }
+  }
+}

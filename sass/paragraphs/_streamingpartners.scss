@@ -13,7 +13,7 @@
   }
 }
 .streaming-partners-table {
-  *, ::before, ::after {
+  *, &::before, &::after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -41,7 +41,7 @@
       p {
         font-size: .875rem;
       }
-      :first-child {
+      &:first-child {
         text-align: right;
         justify-content: flex-start;
         padding-right: 20px;
