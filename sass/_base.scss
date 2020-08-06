@@ -6,6 +6,10 @@ body {
 
 a {
   color: $blue--persian;
+  &:hover {
+    color: $white;
+  }
+
 }
 
 li {
