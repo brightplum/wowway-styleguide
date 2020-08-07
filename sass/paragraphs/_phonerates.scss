@@ -76,8 +76,11 @@
     position: relative;
     z-index: 4;
     display: inline-block;
+    select {
+      padding-right: 15px;
+    }
     ::after {
-      content: '';
+      content: '+';
       background-image: url(/assets/img/chevron-white.svg);
       background-repeat: no-repeat;
       background-size: contain;

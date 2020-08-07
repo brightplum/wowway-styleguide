@@ -26,7 +26,7 @@ body {
 a {
   color: #0065e3; }
   a:hover {
-    color: #ffffff; }
+    color: #d9d9d9; }
 
 li p {
   font-weight: 200;
@@ -249,7 +249,8 @@ footer {
   border-radius: 3px;
   cursor: pointer; }
   .btn--transparent:hover {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    color: #000000; }
 
 .btn--blue {
   background-color: #0065e3;
@@ -2181,8 +2182,10 @@ footer .row {
     position: relative;
     z-index: 4;
     display: inline-block; }
+    .phone-int-rates-content .button-select select {
+      padding-right: 15px; }
     .phone-int-rates-content .button-select ::after {
-      content: '';
+      content: '+';
       background-image: url(/assets/img/chevron-white.svg);
       background-repeat: no-repeat;
       background-size: contain;
