@@ -1,7 +1,6 @@
 body {
   font-size: 16px;
   font-family: $p-font-stack;
-  color: rgb(88,89,91);
 }
 
 a {
@@ -11,7 +10,10 @@ a {
   }
 
 }
-
+h1 {
+  font-size: 52px;
+  margin-top: 0;
+}
 li {
   p {
     font-weight: 200;
@@ -66,7 +68,12 @@ footer {
 }
 .font-size-24 {
   font-size: 24px;
+  line-height: 16px;
+  margin: 0;
 }
 .hidden {
   display: none;
+}
+.text-center {
+  text-align: center;
 }

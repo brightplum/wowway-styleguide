@@ -51,7 +51,10 @@
   @media only screen and (max-width: 600px) {
     padding: 48px 18px;
   }
-
+  p {
+    margin: 10px 0 0 0;
+    max-width: 80%;
+  }
 
 }
 .whwf-hero__pricing {
@@ -63,23 +66,25 @@
   }
 }
 .whwf-hero__pricing-item {
-  &::before {
-    &:not(&:first-child) {
+  &:not(:first-child) {
+    &::before {
       content: '+';
       position: absolute;
       font-size: 3.2em;
     }
   }
-  margin-top: 32px;
   position: relative;
   @media only screen and (min-width: 825px) {
-    &::before {
+    .whwf-hero__pricing-item + .whwf-hero__pricing-item {
+      margin-top: 64px
+    }
+    &:before {
       top: 40px;
       left: -46px;
     }
   }
     @media only screen and (max-width: 824px) {
-      &::before {
+      &:before {
         top: -70px;
       }
     }
@@ -92,14 +97,12 @@
       letter-spacing: 0.5px;
     }
     .whwf-hero__pricing__price {
-      font-size: 53.6px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 10px;
-      max-width: 80%;
+      p {
+        font-size: 3.35em;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      display: flex;
     }
     .whwf-hero__pricing__details {
       display: block;
@@ -126,11 +129,8 @@
       font-weight: 200;
       letter-spacing: 0.5px;
     }
-    ::after {
-      box-sizing: border-box;
-    }
 }
-.whwf-slice__pricing {
+.whwf-hero__pricing {
   display: flex;
   margin-top: 24px;
 }
@@ -160,5 +160,60 @@
       padding: 0 8px;
       font-size: .75em;
     }
+  }
+}
+.whwf-slice {
+  position: relative;
+  background-image: url("https://via.placeholder.com/2558x1282");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  @media only screen and (min-width: 1281px) {
+    min-height: 780px;
+  }
+  @media only screen and (max-width: 1280px) {
+    min-height: 820px;
+  }
+}
+.whwf-slice-content {
+  color: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  padding: 80px 400px 80px 24px;
+  @media only screen and (min-width: 1281px) {
+    max-width: 1115px;
+  }
+  h2 {
+    font-size: 48px;
+    margin-top: inherit;
+    font-weight: normal;
+    line-height: 1.25em;
+  }
+  p {
+    font-size: .95em;
+    margin: 10px 0 0 0;
+    max-width: 80%;
+  }
+}
+p.whwf-slice-pricing-item-title {
+  color: #FFF;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: none;
+  white-space: nowrap;
+}
+.whwf-slice-pricing-item-price-details {
+  text-transform: uppercase;
+  font-size: .75em;
+  @media only screen and (min-width:801px) {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 12px;
+    padding-bottom: 6px;
   }
 }

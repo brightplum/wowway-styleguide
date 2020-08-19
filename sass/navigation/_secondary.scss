@@ -10,7 +10,7 @@
   align-items: center;
 }
 .nav-secondary__banner {
-  background-image: url('');
+  background-image: url('/themes/custom/wowway/images/WOW_ColorBar.svg');
   background-color: $blue--persian;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +22,7 @@
 }
 
 .nav-secondary__content {
-  height: 100%;
+  height: 30px;
   align-items: center;
   display: flex;
   max-width: 1440px;
@@ -30,10 +30,9 @@
 }
 
 .nav-secondary__content__logo {
-  height: inherit;
+  height: 100%;
   margin-left: 70px;
   margin-right: auto;
-  padding-top:10px;
 
   @media only screen and (max-width: 950px) {
     margin-left: 15px;

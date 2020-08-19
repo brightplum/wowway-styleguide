@@ -56,6 +56,9 @@
   cursor: pointer;
   padding-left: 30px;
   padding-right: 30px;
+  a {
+    color: $white !important;
+  }
   &:hover {
     background-color: #004eb0;
   }
@@ -92,6 +95,9 @@
   background-color: $orange;
   &:hover {
     background-color: #d8a400;
+  }
+  a {
+    color: $black;
   }
 }
 .hero-button-wrapper {

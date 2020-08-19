@@ -1,0 +1,63 @@
+.internet-bundles__section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  a {
+    text-decoration: none;
+  }
+  h3 {
+    font-size: 18.72px;
+    margin-top: inherit;
+  }
+  .bundle-1 {
+    background-image: url('https://via.placeholder.com/640x360');
+    p {
+      font-size: .9em;
+      font-weight: 200;
+    }
+  }
+  .bundle-2 {
+    background-image: url('https://via.placeholder.com/640x360');
+    button {
+      margin: 15px 0;
+    }
+    p {
+      font-size: .9em;
+      font-weight: 200;
+    }
+    .price span {
+      display: inline-block;
+    }
+  }
+  .bundle-1, .bundle-2 {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 20px;
+    height: 275px;
+    .bundle__content {
+      width: 60%;
+      max-width: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .bundle__details {
+      height: 110px;
+    }
+  }
+}
+.internet-bundles__section-streaming .bundle-1, .internet-bundles__section-streaming .bundle-2 {
+  flex: 1 1;
+  height: auto;
+}

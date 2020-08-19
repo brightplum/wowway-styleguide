@@ -1,0 +1,32 @@
+.sticky-a {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  color: white;
+  background: #0065e3;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+  z-index: 1000;
+  cursor: pointer;
+  span {
+    display: block;
+  }
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-comments::before {
+  content: "\f086";
+}

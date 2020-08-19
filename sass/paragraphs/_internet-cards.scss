@@ -1,0 +1,64 @@
+.internet-card-section {
+  background-color: #E9E9E9;
+  padding: 75px 0 100px 0;
+  text-align: center;
+  @media only screen and (max-width: 600px) {
+    padding: 32px 25px;
+  }
+  @media only screen and (max-width: 845px) {
+    padding: 40px 50px;
+  }
+}
+.internet-card-section-content {
+  h2 {
+    font-size: 48px;
+    margin-top: inherit;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 5px;
+  }
+}
+.internet-cards {
+  margin-top: 60px;
+  text-align: center;
+  @media only screen and (max-width: 600px) {
+    margin-top: 20px;
+  }
+}
+.internet-card {
+  background-color: $white;
+  text-align: left;
+  max-width: 275px;
+  width: 275px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, .05);
+  margin: 20px;
+  display: inline-block;
+  @media only screen and (max-width: 600px) {
+    margin: 5px 0;
+  }
+  .internet-card-flag {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .7em;
+    letter-spacing: 1px;
+    padding: 5px 25px;
+  }
+  .internet-card-details {
+    height: 105px;
+  }
+  p {
+    padding: 3px 25px;
+    font-size: .9em;
+    margin: 0;
+  }
+  a {
+    display: inline-block;
+    padding: 10px 25px 20px 25px;
+    font-size: .7em;
+  }
+}
